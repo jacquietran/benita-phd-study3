@@ -20,13 +20,22 @@ From the plots below, an example interpretation is:
 
 
 
-<img src="03-inflight_sleep_files/figure-html/patch_plots-1.png" width="1152" />
+<img src="03-inflight_sleep_files/figure-html/patch_plots_indiv_summary-1.png" width="1152" />
 
 ## Team summary
 
 ### Table: Per sleep bout
 
-### Table: Per day
+### Plots: Daily sleep
+
+
+
+
+
+<img src="03-inflight_sleep_files/figure-html/patch_plots_sleep_daily-1.png" width="1152" />
+
+
+### Tables: Per day across in-flight period
 
 Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary statistics for in-flight sleep, expressed as absolute values.
 
