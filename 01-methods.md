@@ -1,5 +1,11 @@
 # Methods {#methods}
 
+## Participants {#methods-participants}
+
+In total, there were 16 players who participated in this study. However, 2 players recorded habitual sleep only (i.e., no tour sleep data available). In addition, 3 players recorded tour sleep only (i.e., no habitual sleep data available). Thus, 5 participants were excluded from the analysis, where `ath_id = c("09", "13", "14", "15", "16")`.
+
+All results reported here include the 11 players who recorded both habitual and on-tour sleep.
+
 ## Key definitions
 
 - **In-flight sleep:** The sleep obtained during the international travel from Melbourne to Chennai on 8 and 9 March.
@@ -41,3 +47,4 @@ The per day data has been calculated from the bout-level data as follows:
 - **Average duration of wake bouts:** Mean of the average wake bout duration from all sleep bouts that started on the same date, for each person. *[JT note] THIS IS AN AVERAGE OF AN AVERAGE. Would be better to calculate this from total wake duration divided by number of wake bouts.*
 
 ## Analysis
+

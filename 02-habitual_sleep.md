@@ -1,5 +1,6 @@
 # Habitual sleep {#habitualsleep}
 
+As explained in [2.1 Participants](#methods-participants), the habitual sleep summaries below include **only those participants who recorded habitual and on-tour sleep**. The variable `n_nights` indicates the number of habitual sleep nights recorded by each athlete.
 
 
 
@@ -8,15 +9,21 @@
 
 
 
-## Table: Per player
 
-The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep summary data for each player. One row = one player's habitual sleep measures. *Note:* Players with the `ath_id` values of 09, 13, and 14 did not record any sleep data during the habitual monitoring period.
+## Per player
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
+The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep summary data for each player. One row = one player's habitual sleep measures, expressed as per-day means.
+
+**Example interpretation:**
+
+> During the habitual sleep period, the average bed time of athlete 01 was 11:41 PM and their average wake-up time was 7:00 AM.
+
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:550px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tablehabitualsummary)Habitual sleep characteristics per player.</caption>
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> ath_id </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> n_nights </th>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> bed_time </th>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> wake_up_time </th>
    <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> sleep_duration_min </th>
@@ -31,6 +38,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
 <tbody>
   <tr>
    <td style="text-align:left;"> 01 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 23:41:00 </td>
    <td style="text-align:right;"> 07:00:00 </td>
    <td style="text-align:right;"> 439 </td>
@@ -43,6 +51,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 02 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> 00:11:00 </td>
    <td style="text-align:right;"> 12:16:00 </td>
    <td style="text-align:right;"> 484 </td>
@@ -55,6 +64,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 03 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 22:56:00 </td>
    <td style="text-align:right;"> 05:16:00 </td>
    <td style="text-align:right;"> 380 </td>
@@ -67,6 +77,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 04 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 23:10:00 </td>
    <td style="text-align:right;"> 08:12:00 </td>
    <td style="text-align:right;"> 542 </td>
@@ -79,6 +90,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 05 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 23:23:00 </td>
    <td style="text-align:right;"> 06:47:00 </td>
    <td style="text-align:right;"> 445 </td>
@@ -91,6 +103,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 06 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 22:50:00 </td>
    <td style="text-align:right;"> 07:28:00 </td>
    <td style="text-align:right;"> 518 </td>
@@ -103,6 +116,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 07 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> 23:10:00 </td>
    <td style="text-align:right;"> 07:00:00 </td>
    <td style="text-align:right;"> 470 </td>
@@ -115,6 +129,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 08 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 22:54:00 </td>
    <td style="text-align:right;"> 06:41:00 </td>
    <td style="text-align:right;"> 467 </td>
@@ -127,6 +142,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 10 </td>
+   <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> 22:52:00 </td>
    <td style="text-align:right;"> 07:01:00 </td>
    <td style="text-align:right;"> 489 </td>
@@ -139,6 +155,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 11 </td>
+   <td style="text-align:right;"> 7 </td>
    <td style="text-align:right;"> 22:56:00 </td>
    <td style="text-align:right;"> 07:23:00 </td>
    <td style="text-align:right;"> 507 </td>
@@ -151,6 +168,7 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
   </tr>
   <tr>
    <td style="text-align:left;"> 12 </td>
+   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 23:06:00 </td>
    <td style="text-align:right;"> 07:40:00 </td>
    <td style="text-align:right;"> 514 </td>
@@ -161,38 +179,16 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
    <td style="text-align:right;"> 23 </td>
    <td style="text-align:right;"> 1.76 </td>
   </tr>
-  <tr>
-   <td style="text-align:left;"> 15 </td>
-   <td style="text-align:right;"> 22:03:00 </td>
-   <td style="text-align:right;"> 06:04:00 </td>
-   <td style="text-align:right;"> 481 </td>
-   <td style="text-align:right;"> 8.02 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 88.58 </td>
-   <td style="text-align:right;"> 51 </td>
-   <td style="text-align:right;"> 31 </td>
-   <td style="text-align:right;"> 1.66 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 16 </td>
-   <td style="text-align:right;"> 23:46:00 </td>
-   <td style="text-align:right;"> 09:04:00 </td>
-   <td style="text-align:right;"> 547 </td>
-   <td style="text-align:right;"> 9.12 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 87.95 </td>
-   <td style="text-align:right;"> 59 </td>
-   <td style="text-align:right;"> 27 </td>
-   <td style="text-align:right;"> 2.17 </td>
-  </tr>
 </tbody>
 </table></div>
 
-## Table: Team summary
+## Team summary
 
 Table \@ref(tab:tablehabitualteamsummary) shows habitual sleep data summarised for the whole team (means and standard deviations). These values are also obtained from day-level sleep monitoring data (i.e., they are not "averages of averages" that would be obtained by taking averages from the per-player data).
 
-**NOTE:** The team summary data below includes all individuals who recorded habitual sleep data. However, this sample differs slightly from the group of individuals who completed on-tour sleep monitoring. Take care when preparing reports, to ensure the relevant data set is being referenced.
+**Example interpretation:**
+
+> Across the team, mean sleep duration during the habitual sleep period was 7.98 h per night (SD = 1.16 h).
 
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tablehabitualteamsummary)Habitual sleep characteristics for the whole team.</caption>
@@ -213,34 +209,34 @@ Table \@ref(tab:tablehabitualteamsummary) shows habitual sleep data summarised f
 <tbody>
   <tr>
    <td style="text-align:left;"> Mean </td>
-   <td style="text-align:right;"> 23:08:00 </td>
-   <td style="text-align:right;"> 07:33:00 </td>
-   <td style="text-align:right;"> 485 </td>
-   <td style="text-align:right;"> 8.08 </td>
+   <td style="text-align:right;"> 23:12:00 </td>
+   <td style="text-align:right;"> 07:35:00 </td>
+   <td style="text-align:right;"> 479 </td>
+   <td style="text-align:right;"> 7.98 </td>
    <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 85.57 </td>
-   <td style="text-align:right;"> 61 </td>
+   <td style="text-align:right;"> 84.98 </td>
+   <td style="text-align:right;"> 62 </td>
    <td style="text-align:right;"> 29 </td>
-   <td style="text-align:right;"> 2.14 </td>
+   <td style="text-align:right;"> 2.19 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
-   <td style="text-align:right;"> 01:10:00 </td>
-   <td style="text-align:right;"> 02:15:00 </td>
-   <td style="text-align:right;"> 69 </td>
-   <td style="text-align:right;"> 1.15 </td>
+   <td style="text-align:right;"> 01:11:00 </td>
+   <td style="text-align:right;"> 02:21:00 </td>
+   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 1.16 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 7.57 </td>
+   <td style="text-align:right;"> 36 </td>
    <td style="text-align:right;"> 13 </td>
-   <td style="text-align:right;"> 7.09 </td>
-   <td style="text-align:right;"> 33 </td>
-   <td style="text-align:right;"> 12 </td>
-   <td style="text-align:right;"> 0.94 </td>
+   <td style="text-align:right;"> 1.01 </td>
   </tr>
 </tbody>
 </table></div>
 
 ## Plots
 
-The plots below are visual presentations of the data displayed in Tables \@ref(tab:tablehabitualsummary) and \@ref(tab:tablehabitualteamsummary) above.
+The plots below are visual representations of the data displayed in Tables \@ref(tab:tablehabitualsummary) and \@ref(tab:tablehabitualteamsummary) above.
 
 
 
