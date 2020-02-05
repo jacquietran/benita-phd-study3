@@ -18,6 +18,8 @@ From the plots below, an example interpretation is:
 
 > When examining sleep obtained during the international travel period, athlete 10 recorded the highest sleep duration per night (mean = 10.19 h), while athlete 01 recorded the lowest sleep duration per night (mean = 4.99 h).
 
+**Note:** The in-flight period covers two days, so individual means and standard deviations should be interpreted in this context. Wide standard deviations are not a cause for concern, but rather a reflection of these statistics being summaries of only 2 observations per person.
+
 
 
 <img src="03-inflight_sleep_files/figure-html/patch_plots_indiv_summary-1.png" width="1152" />
@@ -27,6 +29,10 @@ From the plots below, an example interpretation is:
 ### Table: Per sleep bout
 
 ### Plots: Daily sleep
+
+From the plots below, an example interpretation is:
+
+> On average, players obtained less than their habitual sleep duration on the first night of in-flight sleep (habitual sleep = 7.97 h; in-flight, 1st night = 5.69 h). On the second night of sleep, they obtained more than their habitual sleep duration (in-flight, 2nd night = 8.95 h)
 
 
 
