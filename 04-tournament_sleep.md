@@ -1,21 +1,11 @@
 # Tournament sleep {#tournamentsleep}
 
-## Distinct sleep periods
+## Per player
 
-Some stuff
+### Plots: Per day
 
-## Sleep per day
+## Team summary
 
-Some more stuff
+### Plots: Daily sleep
 
-## Individual profiles
-
-asdfasdfwe
-
-### Distinct sleep periods
-
-werwqerq
-
-### Sleep per day
-
-ftytyty
+### Tables: Per day across tournament period
