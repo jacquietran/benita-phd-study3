@@ -24,6 +24,19 @@ From the plots below, an example interpretation is:
 
 <img src="03-inflight_sleep_files/figure-html/patch_plots_indiv_summary-1.png" width="1152" />
 
+### Plots: Aggregated over flights
+
+**NOTE:** For these plots, sleep efficiency and average duration of wake bouts data needs to be recalculated from first principles rather than taking an average of an average.
+
+From the plots below, an example interpretation is:
+
+> The total wake duration recorded across all in-flight sleep bouts varied widely between players. Athlete 01 accumulated the lowest wake duration (36 min), while athlete 04 accumulated the highest total wake duration (228 min).
+
+
+
+
+<img src="03-inflight_sleep_files/figure-html/patch_plots_inflight_aggregate_indiv-1.png" width="1152" />
+
 ## Team summary
 
 ### Table: Per sleep bout
