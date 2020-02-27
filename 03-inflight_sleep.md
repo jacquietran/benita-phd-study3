@@ -26,7 +26,7 @@ From the plots below, an example interpretation is:
 
 ### Plots: Aggregated over flights
 
-**NOTE:** For these plots, sleep efficiency and average duration of wake bouts data needs to be recalculated from first principles rather than taking an average of an average.
+**NOTE:** For these plots, ~~sleep efficiency and~~ average duration of wake bouts data needs to be recalculated from first principles rather than taking an average of an average.
 
 From the plots below, an example interpretation is:
 
@@ -69,6 +69,7 @@ Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary sta
    <th style="text-align:left;"> statistic </th>
    <th style="text-align:right;"> sleep_duration </th>
    <th style="text-align:right;"> sleep_duration_h </th>
+   <th style="text-align:right;"> total_time_in_bed </th>
    <th style="text-align:right;"> sleep_latency </th>
    <th style="text-align:right;"> sleep_efficiency </th>
    <th style="text-align:right;"> wake_duration </th>
@@ -81,21 +82,23 @@ Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary sta
    <td style="text-align:left;"> Mean </td>
    <td style="text-align:right;"> 439 </td>
    <td style="text-align:right;"> 7.32 </td>
+   <td style="text-align:right;"> 511 </td>
    <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 87.33 </td>
+   <td style="text-align:right;"> 86.65 </td>
    <td style="text-align:right;"> 50 </td>
    <td style="text-align:right;"> 18 </td>
-   <td style="text-align:right;"> 2.31 </td>
+   <td style="text-align:right;"> 2.40 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
-   <td style="text-align:right;"> 174 </td>
-   <td style="text-align:right;"> 2.90 </td>
+   <td style="text-align:right;"> 156 </td>
+   <td style="text-align:right;"> 2.59 </td>
+   <td style="text-align:right;"> 194 </td>
    <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 6.78 </td>
-   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 7.35 </td>
+   <td style="text-align:right;"> 42 </td>
    <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 0.76 </td>
+   <td style="text-align:right;"> 0.96 </td>
   </tr>
 </tbody>
 </table></div>
@@ -115,6 +118,7 @@ Table \@ref(tab:tableinflightrelativeteam) below presents team-level summary sta
    <th style="text-align:left;"> statistic </th>
    <th style="text-align:right;"> sleep_duration_diff </th>
    <th style="text-align:right;"> sleep_duration_h_diff </th>
+   <th style="text-align:right;"> total_time_in_bed_diff </th>
    <th style="text-align:right;"> sleep_latency_diff </th>
    <th style="text-align:right;"> sleep_efficiency_diff </th>
    <th style="text-align:right;"> wake_duration_diff </th>
@@ -127,21 +131,23 @@ Table \@ref(tab:tableinflightrelativeteam) below presents team-level summary sta
    <td style="text-align:left;"> Mean </td>
    <td style="text-align:right;"> -39 </td>
    <td style="text-align:right;"> -0.66 </td>
+   <td style="text-align:right;"> -53 </td>
    <td style="text-align:right;"> -4 </td>
-   <td style="text-align:right;"> 1.77 </td>
+   <td style="text-align:right;"> 1.09 </td>
    <td style="text-align:right;"> -9 </td>
    <td style="text-align:right;"> -10 </td>
-   <td style="text-align:right;"> 0.17 </td>
+   <td style="text-align:right;"> 0.26 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
-   <td style="text-align:right;"> 172 </td>
-   <td style="text-align:right;"> 2.87 </td>
+   <td style="text-align:right;"> 154 </td>
+   <td style="text-align:right;"> 2.57 </td>
+   <td style="text-align:right;"> 199 </td>
    <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 9.13 </td>
-   <td style="text-align:right;"> 56 </td>
+   <td style="text-align:right;"> 9.78 </td>
+   <td style="text-align:right;"> 55 </td>
    <td style="text-align:right;"> 17 </td>
-   <td style="text-align:right;"> 0.96 </td>
+   <td style="text-align:right;"> 1.15 </td>
   </tr>
 </tbody>
 </table></div>
