@@ -708,3 +708,45 @@ $efficiency_{day-level} = \frac {total\ time\ in\ bed_{day}} {sleep\ duration_{d
 
 ## Analysis
 
+The content below has been copied over from [**the GitHub repo for this analysis**](https://github.com/jacquietran/2019_phd_benita_study_3/blob/master/docs/analysis_plan.md).
+
+### Research question 1
+
+_What changes occur in sleep characteristics, perceptions of jetlag, and self-reported well-being over the course of an international T20 tournament and following an international flight?_
+
+#### Analysis methods
+
+- Descriptive statistics
+- Plots
+
+#### Notes
+
+Objective sleep data can be presented as absolute values and relative-to-habitual values.
+
+### Research question 2
+
+_What is the impact of sleep obtained during an international flight on the subsequent sleep, self-reported well-being, and perceptions of jetlag upon arrival at the competition destination?_
+
+#### Analysis methods
+
+- Use the in-flight sleep to group athletes into categories via median split. For example, a low quantity vs. high quantity? Using data only from the n = 8 with habitual + in-flight sleep data, the median is 11.7 h sleep accumulated across the two flights from Melbourne to Chennai. So the 'low' group would have recorded <= 11.7 h in-flight sleep and the 'high' group would have recorded > 11.7 h (in this example).
+- Then we could scale each athlete's on-tour sleep data to their habitual sleep data, to calculate how far each night of sleep 'deviates' from habitual.
+- This would allow us to use each night of post-flight, on-tour sleep as a data point. With n = 8, this is 91 observations in total; 48 in the 'high quantity' group, 43 in the 'low quantity' group.
+- To compare these groups, I would use a simple pairwise statistic such as the independent t test (parametric) or the Mann-Whitney test (non-parametric), coupled with an effect size calculation (e.g., standardised mean difference).
+- The number of observations is different for the other measures (well-being, perceptions of jetlag) but the general analytical process would be the same.
+
+### Research question 3
+
+_What are the relationships between training and match day load, perceptions of wellbeing and jetlag, and objective sleep characteristics during an international tournament?_
+
+#### Analysis methods
+
+- For n = 13 athletes who recorded some objective sleep data during the tour:
+     -	Relationship: Internal load on subsequent sleep. Number of paired observations: n(paired obs) = 126
+     -	Relationship: Well-being on subsequent sleep. n(paired obs) = 145
+     -	Relationship: Perceived jetlag on subsequent sleep. n(paired obs) = 85
+- Given these numbers, we can address this research question with bivariate correlations (Pearson’s for parametric data, Spearman’s for non-parametric).
+
+### Notes
+
+For this analysis, are we going to scale to habitual sleep as well? Not sure that we need to here, happy to chat about it though.

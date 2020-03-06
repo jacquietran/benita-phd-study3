@@ -4,42 +4,28 @@
 
 
 
-## Sleep bouts
+## Bout-level data
 
 The plots below use data at the level of per player per sleep bout, throughout the whole tour period.
 
 
 
-### Bed and wake times
+### Plot: Bed and wake times of each sleep bout
 
 
 
 <img src="05-tour_sleep_files/figure-html/sleep_bed_wake_up_times-1.png" width="1152" />
 
-### Sleep duration
+### Plots: Sleep characteristics per bout
 
-<img src="05-tour_sleep_files/figure-html/sleep_duration-1.png" width="1152" />
+From the plots below, an example interpretation is:
 
-### Sleep latency
+> During the international transit period (March 8 and 9), players typically slept in shorter bouts than they did once they entered the tournament period (March 10 onwards).
 
-<img src="05-tour_sleep_files/figure-html/sleep_latency-1.png" width="1152" />
 
-### Sleep efficiency
 
-<img src="05-tour_sleep_files/figure-html/sleep_efficiency-1.png" width="1152" />
+<img src="05-tour_sleep_files/figure-html/patch_plots_bout_level-1.png" width="1152" />
 
-### Total duration of wake bouts
-
-<img src="05-tour_sleep_files/figure-html/sleep_wake_duration-1.png" width="1152" />
-
-### Number of wake bouts
-
-<img src="05-tour_sleep_files/figure-html/sleep_wake_bouts_num-1.png" width="1152" />
-
-### Average duration of wake bouts
-
-<img src="05-tour_sleep_files/figure-html/sleep_wake_bouts_avg_duration-1.png" width="1152" />
-
-## Per day
+## Day-level data
 
 Some more stuff
