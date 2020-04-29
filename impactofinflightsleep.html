@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Whole-tour sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers</title>
-  <meta name="description" content="Chapter 6 Whole-tour sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
+  <title>Chapter 11 Impact of in-flight sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers</title>
+  <meta name="description" content="Chapter 11 Impact of in-flight sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Whole-tour sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
+  <meta property="og:title" content="Chapter 11 Impact of in-flight sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Whole-tour sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
+  <meta name="twitter:title" content="Chapter 11 Impact of in-flight sleep | Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="tournamentsleep.html"/>
-<link rel="next" href="indivprofiles.html"/>
+<link rel="prev" href="nparLD.html"/>
+<link rel="next" href="correlations.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -251,27 +251,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="toursleep" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Whole-tour sleep</h1>
-<div id="bout-level-data" class="section level2">
-<h2><span class="header-section-number">6.1</span> Bout-level data</h2>
-<p>The plots below use data at the level of per player per sleep bout, throughout the whole tour period.</p>
-<div id="plot-bed-and-wake-times-of-each-sleep-bout" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> Plot: Bed and wake times of each sleep bout</h3>
-<p><img src="05-tour_sleep_files/figure-html/sleep_bed_wake_up_times-1.png" width="1152" /></p>
+<div id="impactofinflightsleep" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Impact of in-flight sleep</h1>
+<p>RQ2: “What is the impact of in-flight sleep on the subsequent tournament sleep, self-reported well-being, and perceptions of jetlag upon arrival at the competition destination?”</p>
+<div id="assumption-tests" class="section level2">
+<h2><span class="header-section-number">11.1</span> Assumption tests</h2>
+<p><strong>TO DO:</strong> Conduct assumption tests. Given that the assumption testing for RQ3 (correlation analysis) showed that <em>“many variables across the load, sleep, jetlag, and well-being measures do not approximate normal”</em>, we proceed for now on the basis that assumption testing for RQ2 will show similar results.</p>
+<p>For RQ2: we want to compare two groups (poor in-flight sleep vs. good in-flight sleep), accounting for repeated measures of the dependent variable (i.e., daily measures). The appropriate test is a non-parametric test for factorial longitudinal data, as described here by Noguchi et al., 2012: <a href="https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf" class="uri">https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf</a></p>
 </div>
-<div id="plots-sleep-characteristics-per-bout" class="section level3">
-<h3><span class="header-section-number">6.1.2</span> Plots: Sleep characteristics per bout</h3>
-<p>From the plots below, an example interpretation is:</p>
-<blockquote>
-<p>During the international transit period (March 8 and 9), players typically slept in shorter bouts than they did once they entered the tournament period (March 10 onwards).</p>
-</blockquote>
-<p><img src="05-tour_sleep_files/figure-html/patch_plots_bout_level-1.png" width="1152" /></p>
+<div id="analysis-steps" class="section level2">
+<h2><span class="header-section-number">11.2</span> Analysis steps</h2>
+<p>With aggregate in-flight sleep data, apply median split to create groups based on their in-flight sleep quantity (“high” / “low”) and their in-flight sleep quality (“high” / “low”).</p>
+<p>Convert tournament period data to long format. At minimum, this data set needs these variables:
+- Response / dependent variable (e.g., sleep duration)
+- Day of the tournament (this is our time variable)
+- In-flight sleep quantity group (this is one of our grouping variables)
+- In-flight sleep quality group (this is one of our grouping variables)</p>
+<p>Using <code>nparLD</code> package</p>
+<ul>
+<li>Build omnibus model. Inspect plot and model summary.</li>
+<li>Conduct pairwise comparisons with Bonferroni adjustment of alpha level.</li>
+</ul>
 </div>
-</div>
-<div id="day-level-data" class="section level2">
-<h2><span class="header-section-number">6.2</span> Day-level data</h2>
-<p>Some more stuff</p>
+<div id="considerations" class="section level2">
+<h2><span class="header-section-number">11.3</span> Considerations</h2>
+<p>If we had sufficient sample size, the best approach would be to apply the F2-LD-F1 design as described by <a href="https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf">Noguchi, et al., 2012</a>. This is analogous to a three-way ANOVA. With such a design, the omnibus model would be specified as:</p>
+<p>response_variable ~ day * inflight_sleep_quantity_group * inflight_sleep_quality_group</p>
+<p>And the results of the omnibus model would allow us to check for:</p>
+<ul>
+<li>Main effects
+<ul>
+<li>Is there a main effect for “day”? That is, are there changes in the response variable over time (over the tournament period)?</li>
+<li>Is there a main effect for “in-flight sleep quantity group”? That is, do players differ in the response variable based on whether they are in the “high” vs. “low” group for in-flight sleep quantity?</li>
+<li>Is there a main effect for “in-flight sleep quality group”? That is, do players differ in the response variable based on whether they are in the “high” vs. “low” group for in-flight sleep quality?</li>
+</ul></li>
+<li>Interaction effects
+<ul>
+<li>Is there an interaction between “day” and “in-flight sleep quantity group”? That is, do the time profiles of the response variable differ between the two groups that are based on in-flight sleep quantity?</li>
+<li>Is there an interaction between “day” and “in-flight sleep quality group”? That is, do the time profiles of the response variable differ between the two groups that are based on in-flight sleep quality?</li>
+<li>Is there an interaction between “in-flight sleep quantity” and “in-flight sleep quality”? Think of a quadrant: 1) high-quantity &amp; high-quality in-flight sleep; 2) high-quantity &amp; low-quality in-flight sleep; 3) low-quantity &amp; high-quality in-flight sleep; and 4) low-quantity &amp; low-quality in-flight sleep.</li>
+<li>Is there an interaction betwen “day”, “in-flight sleep quantity”, and “in-flight sleep quality”? That is, do the time profiles differ of the response variable between groups based on both their in-flight sleep quantity AND quality? The quadrant idea applies here too.</li>
+</ul></li>
+</ul>
+<p>While this is the ideal approach, our sample size is too small to be “cut” this many ways. We may need to make mention of this when discussing analysis methods / limitations.</p>
 
 </div>
 </div>
@@ -280,8 +302,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="tournamentsleep.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="indivprofiles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="nparLD.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="correlations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

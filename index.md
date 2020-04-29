@@ -1,6 +1,6 @@
 ---
 title: "Study 3: Sleep, perceived jet-lag and perceived well-being in elite women cricketers"
-author: "Benita Lalor et al. | Last updated: 2020-03-06"
+author: "Benita Lalor et al. | Last updated: 2020-04-29"
 site: bookdown::bookdown_site
 documentclass: book
 output:
