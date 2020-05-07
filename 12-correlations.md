@@ -1,6 +1,6 @@
 # Correlations {#correlations}
 
-**NOTE:** As of 2020-03-06, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
+**NOTE:** As of 2020-05-07, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
 
 
 
@@ -16,31 +16,31 @@ Histogram + density plots for each measure are shown below.
 
 
 
-<img src="09-correlations_files/figure-html/normality_sleep_plot-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/normality_sleep_plot-1.png" width="1152" />
 
 ### Internal load - All variables
 
 
 
-<img src="09-correlations_files/figure-html/normality_loads_all_plot-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/normality_loads_all_plot-1.png" width="1152" />
 
 ### Internal loads - Selected variables
 
 
 
-<img src="09-correlations_files/figure-html/normality_loads_selected_plot-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/normality_loads_selected_plot-1.png" width="1152" />
 
 ### Perceived jetlag
 
 
 
-<img src="09-correlations_files/figure-html/normality_jetlag_plot-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/normality_jetlag_plot-1.png" width="1152" />
 
 ### Perceived well-being
 
 
 
-<img src="09-correlations_files/figure-html/normality_wellbeing_plot-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/normality_wellbeing_plot-1.png" width="1152" />
 
 ## Load on Sleep
 
@@ -53,7 +53,7 @@ Histogram + density plots for each measure are shown below.
 
 ### Correlation scatter plots: Internal loads on subsequent sleep
 
-<img src="09-correlations_files/figure-html/loads_to_sleep_scatter-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/loads_to_sleep_scatter-1.png" width="1152" />
 
 ### Correlation coefficients tables
 
@@ -156,7 +156,7 @@ Histogram + density plots for each measure are shown below.
 
 ### Correlation scatter plots: Well-being on subsequent sleep
 
-<img src="09-correlations_files/figure-html/well_to_sleep_scatter-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/well_to_sleep_scatter-1.png" width="1152" />
 
 ### Correlation coefficients tables
 
@@ -391,7 +391,7 @@ Histogram + density plots for each measure are shown below.
 
 ### Correlation scatter plots: Jetlag on subsequent sleep
 
-<img src="09-correlations_files/figure-html/jetlag_to_sleep_scatter-1.png" width="1152" />
+<img src="12-correlations_files/figure-html/jetlag_to_sleep_scatter-1.png" width="1152" />
 
 ### Correlation coefficients
 

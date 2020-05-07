@@ -1,4 +1,4 @@
-# nparLD tutorial {#nparLD}
+# nparLD tutorial - Rat study {#nparLDrats}
 
 Walkthrough of the rat growth study example from the `nparLD` paper by Noguchi, et al., 2012, "nparLD: An R software package for the nonparametric analysis of longitudinal data in factorial experiments", *Journal of Statistical Software*, *50*(12), URL: https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf.
 
@@ -242,7 +242,7 @@ summary(omnibus_model)
 plot(omnibus_model)
 ```
 
-<img src="09-nparLD-tutorial_files/figure-html/plot_summary_omnibus_model-1.png" width="1152" />
+<img src="09-nparLD-tutorial-rats_files/figure-html/plot_summary_omnibus_model-1.png" width="1152" />
 
 ## Run multiple comparison tests
 
