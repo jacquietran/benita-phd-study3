@@ -1,6 +1,6 @@
 # Correlations {#correlations}
 
-**NOTE:** As of 2020-05-13, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
+**NOTE:** As of 2020-05-14, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
 
 
 
