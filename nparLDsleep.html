@@ -211,10 +211,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html"><i class="fa fa-check"></i><b>11</b> Impact of flight on tournament sleep</a><ul>
 <li class="chapter" data-level="11.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-duration-group"><i class="fa fa-check"></i><b>11.1</b> Omnibus models: Based on in-flight duration group</a><ul>
 <li class="chapter" data-level="11.1.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration"><i class="fa fa-check"></i><b>11.1.1</b> Pairwise tests for sleep duration</a></li>
-<li class="chapter" data-level="11.1.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#summary-stats-sleep-duration-by-date"><i class="fa fa-check"></i><b>11.1.2</b> Summary stats: Sleep duration by date</a></li>
+<li class="chapter" data-level="11.1.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts"><i class="fa fa-check"></i><b>11.1.2</b> Pairwise tests for number of wake bouts</a></li>
+<li class="chapter" data-level="11.1.3" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-total-wake-duration"><i class="fa fa-check"></i><b>11.1.3</b> Pairwise tests for total wake duration</a></li>
 </ul></li>
 <li class="chapter" data-level="11.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-efficiency-group"><i class="fa fa-check"></i><b>11.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="11.2.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration-1"><i class="fa fa-check"></i><b>11.2.1</b> Pairwise tests for sleep duration</a></li>
+<li class="chapter" data-level="11.2.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts-1"><i class="fa fa-check"></i><b>11.2.2</b> Pairwise tests for number of wake bouts</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html"><i class="fa fa-check"></i><b>12</b> Impact of flight on jetlag</a><ul>
@@ -1036,10 +1038,10 @@ Higher in-flight efficiency
 <a class="sourceLine" id="cb11-19" title="19">  )</a></code></pre></div>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1"><span class="co"># Print ANOVA-type output for the omnibus model</span></a>
 <a class="sourceLine" id="cb12-2" title="2">omnibus_model<span class="op">$</span>ANOVA.test</a></code></pre></div>
-<pre><code>##                              Statistic       df    p-value
-## group_inflight_duration      0.2200005 1.000000 0.63903951
-## date                         2.3253317 4.286523 0.04962238
-## group_inflight_duration:date 1.2256602 4.286523 0.29659725</code></pre>
+<pre><code>##                               Statistic       df     p-value
+## group_inflight_duration      0.01946545 1.000000 0.889040318
+## date                         3.78005923 4.252324 0.003641049
+## group_inflight_duration:date 1.29732993 4.252324 0.266826220</code></pre>
 <p>The results above can be interpreted as follows:</p>
 <ul>
 <li>There is no main effect for <code>group_inflight_duration</code> (p = 0.64). That is, the higher and lower in-flight sleep duration groups <strong>are not different</strong> in terms of the daily sleep duration obtained by players during the tournament period.</li>
@@ -2009,6 +2011,26 @@ pairwise_diff
 date
 </td>
 <td style="text-align:left;">
+subset_march_10_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
 subset_march_10_vs_21
 </td>
 <td style="text-align:left;">
@@ -2016,6 +2038,46 @@ p
 </td>
 <td style="text-align:right;">
 0.000286
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+subset_march_11_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000479
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+subset_march_12_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000755
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2049,6 +2111,66 @@ Yes
 date
 </td>
 <td style="text-align:left;">
+subset_march_13_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000459
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+subset_march_15_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000038
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+subset_march_16_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000000
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
 subset_march_16_vs_21
 </td>
 <td style="text-align:left;">
@@ -2056,6 +2178,26 @@ p
 </td>
 <td style="text-align:right;">
 0.000031
+</td>
+<td style="text-align:right;">
+0.000758
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+<td style="text-align:left;">
+subset_march_17_vs_18
+</td>
+<td style="text-align:left;">
+p
+</td>
+<td style="text-align:right;">
+0.000000
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2215,27 +2357,7 @@ subset_march_10_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.400045
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_10_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.005546
+0.525521
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2395,27 +2517,7 @@ subset_march_11_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.023604
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_11_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.032233
+0.004124
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2575,27 +2677,7 @@ subset_march_12_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.048122
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_12_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.091431
+0.039147
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2715,27 +2797,7 @@ subset_march_13_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.282121
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_13_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.021065
+0.404347
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2855,7 +2917,7 @@ subset_march_14_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.162436
+0.170794
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2875,7 +2937,7 @@ subset_march_14_vs_18
 p
 </td>
 <td style="text-align:right;">
-0.102348
+0.005429
 </td>
 <td style="text-align:right;">
 0.000758
@@ -2975,27 +3037,7 @@ subset_march_15_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.694875
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_15_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.034717
+0.868179
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3075,27 +3117,7 @@ subset_march_16_vs_17
 p
 </td>
 <td style="text-align:right;">
-0.489525
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
-subset_march_16_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.003184
+0.766649
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3149,33 +3171,13 @@ No
 date
 </td>
 <td style="text-align:left;">
-subset_march_17_vs_18
-</td>
-<td style="text-align:left;">
-p
-</td>
-<td style="text-align:right;">
-0.002509
-</td>
-<td style="text-align:right;">
-0.000758
-</td>
-<td style="text-align:left;">
-No
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-date
-</td>
-<td style="text-align:left;">
 subset_march_17_vs_19
 </td>
 <td style="text-align:left;">
 p
 </td>
 <td style="text-align:right;">
-0.807183
+0.966088
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3195,7 +3197,7 @@ subset_march_17_vs_20
 p
 </td>
 <td style="text-align:right;">
-0.361980
+0.495857
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3215,7 +3217,7 @@ subset_march_18_vs_19
 p
 </td>
 <td style="text-align:right;">
-0.058859
+0.000962
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3235,7 +3237,7 @@ subset_march_18_vs_20
 p
 </td>
 <td style="text-align:right;">
-0.086439
+0.001913
 </td>
 <td style="text-align:right;">
 0.000758
@@ -3255,7 +3257,7 @@ subset_march_18_vs_21
 p
 </td>
 <td style="text-align:right;">
-0.656568
+0.906724
 </td>
 <td style="text-align:right;">
 0.000758

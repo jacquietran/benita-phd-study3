@@ -42,7 +42,7 @@
    <td style="text-align:right;"> 0.1325 </td>
    <td style="text-align:left;"> <span style="     color: crimson !important;">No</span> </td>
   </tr>
-  <tr grouplength="3"><td colspan="5" style="border-bottom: 1px solid;"><strong>Sleep</strong></td></tr>
+  <tr grouplength="3"><td colspan="5" style="border-bottom: 1px solid;"><strong>Sleep quality</strong></td></tr>
 <tr>
    <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Main effect: In-flight duration group </td>
    <td style="text-align:right;"> 3.6892 </td>
@@ -173,7 +173,7 @@
    <td style="text-align:right;"> 0.3642 </td>
    <td style="text-align:left;"> <span style="     color: crimson !important;">No</span> </td>
   </tr>
-  <tr grouplength="3"><td colspan="5" style="border-bottom: 1px solid;"><strong>Sleep</strong></td></tr>
+  <tr grouplength="3"><td colspan="5" style="border-bottom: 1px solid;"><strong>Sleep quality</strong></td></tr>
 <tr>
    <td style="text-align:left; padding-left: 2em;" indentlevel="1"> Main effect: In-flight efficiency group </td>
    <td style="text-align:right;"> 0.0753 </td>

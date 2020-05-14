@@ -49,7 +49,6 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
    <th style="text-align:left;"> statistic </th>
    <th style="text-align:right;"> sleep_duration </th>
    <th style="text-align:right;"> sleep_duration_h </th>
-   <th style="text-align:right;"> total_time_in_bed </th>
    <th style="text-align:right;"> sleep_latency </th>
    <th style="text-align:right;"> sleep_efficiency </th>
    <th style="text-align:right;"> wake_duration </th>
@@ -60,22 +59,20 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
 <tbody>
   <tr>
    <td style="text-align:left;"> Mean </td>
-   <td style="text-align:right;"> 500 </td>
-   <td style="text-align:right;"> 8.33 </td>
-   <td style="text-align:right;"> 607 </td>
+   <td style="text-align:right;"> 496 </td>
+   <td style="text-align:right;"> 8.26 </td>
    <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 82.89 </td>
-   <td style="text-align:right;"> 73 </td>
-   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 82.92 </td>
+   <td style="text-align:right;"> 72 </td>
+   <td style="text-align:right;"> 28 </td>
    <td style="text-align:right;"> 2.45 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
-   <td style="text-align:right;"> 92 </td>
-   <td style="text-align:right;"> 1.54 </td>
-   <td style="text-align:right;"> 120 </td>
+   <td style="text-align:right;"> 84 </td>
+   <td style="text-align:right;"> 1.40 </td>
    <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 7.74 </td>
+   <td style="text-align:right;"> 7.72 </td>
    <td style="text-align:right;"> 38 </td>
    <td style="text-align:right;"> 12 </td>
    <td style="text-align:right;"> 1.10 </td>
@@ -98,7 +95,6 @@ Table \@ref(tab:tabletournamentrelativeteam) below presents team-level summary s
    <th style="text-align:left;"> statistic </th>
    <th style="text-align:right;"> sleep_duration_diff </th>
    <th style="text-align:right;"> sleep_duration_h_diff </th>
-   <th style="text-align:right;"> total_time_in_bed_diff </th>
    <th style="text-align:right;"> sleep_latency_diff </th>
    <th style="text-align:right;"> sleep_efficiency_diff </th>
    <th style="text-align:right;"> wake_duration_diff </th>
@@ -109,25 +105,23 @@ Table \@ref(tab:tabletournamentrelativeteam) below presents team-level summary s
 <tbody>
   <tr>
    <td style="text-align:left;"> Mean </td>
-   <td style="text-align:right;"> 21 </td>
-   <td style="text-align:right;"> 0.35 </td>
-   <td style="text-align:right;"> 39 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 0.27 </td>
    <td style="text-align:right;"> -3 </td>
-   <td style="text-align:right;"> -2.13 </td>
+   <td style="text-align:right;"> -2.12 </td>
    <td style="text-align:right;"> 11 </td>
    <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> 0.28 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
-   <td style="text-align:right;"> 106 </td>
-   <td style="text-align:right;"> 1.77 </td>
-   <td style="text-align:right;"> 134 </td>
+   <td style="text-align:right;"> 101 </td>
+   <td style="text-align:right;"> 1.68 </td>
    <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 9.16 </td>
+   <td style="text-align:right;"> 9.13 </td>
    <td style="text-align:right;"> 43 </td>
    <td style="text-align:right;"> 15 </td>
-   <td style="text-align:right;"> 1.28 </td>
+   <td style="text-align:right;"> 1.27 </td>
   </tr>
 </tbody>
 </table></div>

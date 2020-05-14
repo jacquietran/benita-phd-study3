@@ -434,10 +434,10 @@ omnibus_model$ANOVA.test
 ```
 
 ```
-##                              Statistic       df    p-value
-## group_inflight_duration      0.2200005 1.000000 0.63903951
-## date                         2.3253317 4.286523 0.04962238
-## group_inflight_duration:date 1.2256602 4.286523 0.29659725
+##                               Statistic       df     p-value
+## group_inflight_duration      0.01946545 1.000000 0.889040318
+## date                         3.78005923 4.252324 0.003641049
+## group_inflight_duration:date 1.29732993 4.252324 0.266826220
 ```
 
 The results above can be interpreted as follows:
@@ -1157,9 +1157,33 @@ pairwise_tests_time_results %>%
 <tbody>
   <tr>
    <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_10_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000000 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_10_vs_21 </td>
    <td style="text-align:left;"> p </td>
    <td style="text-align:right;"> 0.000286 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_11_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000479 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_12_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000755 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> Yes </td>
   </tr>
@@ -1173,9 +1197,41 @@ pairwise_tests_time_results %>%
   </tr>
   <tr>
    <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_13_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000459 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_15_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000038 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_16_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000000 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_16_vs_21 </td>
    <td style="text-align:left;"> p </td>
    <td style="text-align:right;"> 0.000031 </td>
+   <td style="text-align:right;"> 0.000758 </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> date </td>
+   <td style="text-align:left;"> subset_march_17_vs_18 </td>
+   <td style="text-align:left;"> p </td>
+   <td style="text-align:right;"> 0.000000 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> Yes </td>
   </tr>
@@ -1239,15 +1295,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_10_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.400045 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_10_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.005546 </td>
+   <td style="text-align:right;"> 0.525521 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1311,15 +1359,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_11_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.023604 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_11_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.032233 </td>
+   <td style="text-align:right;"> 0.004124 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1383,15 +1423,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_12_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.048122 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_12_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.091431 </td>
+   <td style="text-align:right;"> 0.039147 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1439,15 +1471,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_13_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.282121 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_13_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.021065 </td>
+   <td style="text-align:right;"> 0.404347 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1495,7 +1519,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_14_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.162436 </td>
+   <td style="text-align:right;"> 0.170794 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1503,7 +1527,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_14_vs_18 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.102348 </td>
+   <td style="text-align:right;"> 0.005429 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1543,15 +1567,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_15_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.694875 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_15_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.034717 </td>
+   <td style="text-align:right;"> 0.868179 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1583,15 +1599,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_16_vs_17 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.489525 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_16_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.003184 </td>
+   <td style="text-align:right;"> 0.766649 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1613,17 +1621,9 @@ pairwise_tests_time_results %>%
   </tr>
   <tr>
    <td style="text-align:left;"> date </td>
-   <td style="text-align:left;"> subset_march_17_vs_18 </td>
-   <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.002509 </td>
-   <td style="text-align:right;"> 0.000758 </td>
-   <td style="text-align:left;"> No </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_17_vs_19 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.807183 </td>
+   <td style="text-align:right;"> 0.966088 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1631,7 +1631,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_17_vs_20 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.361980 </td>
+   <td style="text-align:right;"> 0.495857 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1639,7 +1639,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_18_vs_19 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.058859 </td>
+   <td style="text-align:right;"> 0.000962 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1647,7 +1647,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_18_vs_20 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.086439 </td>
+   <td style="text-align:right;"> 0.001913 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
@@ -1655,7 +1655,7 @@ pairwise_tests_time_results %>%
    <td style="text-align:left;"> date </td>
    <td style="text-align:left;"> subset_march_18_vs_21 </td>
    <td style="text-align:left;"> p </td>
-   <td style="text-align:right;"> 0.656568 </td>
+   <td style="text-align:right;"> 0.906724 </td>
    <td style="text-align:right;"> 0.000758 </td>
    <td style="text-align:left;"> No </td>
   </tr>
