@@ -1,4 +1,4 @@
-# Impact of in-flight sleep on tournament sleep {#inflightsleepandtournamentsleep}
+# Impact of flight on tournament sleep {#inflightsleepandtournamentsleep}
 
 <span style="color: red; font-weight: bold;">TO DO:</span> Conduct assumption tests. Given that the assumption testing for RQ3 (correlation analysis) showed that *"many variables across the load, sleep, jetlag, and well-being measures do not approximate normal"*, we proceed for now on the basis that assumption testing for RQ2 will show similar results.
 
@@ -656,6 +656,9 @@
   </tr>
 </tbody>
 </table></div>
+
+<br />
+<img src="10-impact_of_inflight_sleep_tournament_sleep_files/figure-html/plot_sleep_duration_by_date-1.png" width="768" />
 
 ## Omnibus models: Based on in-flight efficiency group
 

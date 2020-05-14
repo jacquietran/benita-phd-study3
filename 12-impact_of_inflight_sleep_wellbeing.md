@@ -293,5 +293,6 @@
 </tbody>
 </table></div>
 
+<br />
 <img src="12-impact_of_inflight_sleep_wellbeing_files/figure-html/plot_fatigue_by_efficiency_group-1.png" width="672" />
 
