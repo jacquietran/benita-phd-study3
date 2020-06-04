@@ -1582,7 +1582,7 @@
 <br />
 
 ```
-## Warning: Removed 1 rows containing missing values (geom_point).
+## Warning: Removed 2 rows containing missing values (geom_point).
 ```
 
 <img src="10-impact_of_inflight_sleep_tournament_sleep_files/figure-html/plot_wake_duration_by_date-1.png" width="768" />

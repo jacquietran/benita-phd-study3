@@ -39,8 +39,6 @@ From the plots below, an example interpretation is:
 
 ## Team summary
 
-### Table: Per sleep bout
-
 ### Plots: Daily sleep
 
 From the plots below, an example interpretation is:
@@ -56,7 +54,7 @@ From the plots below, an example interpretation is:
 
 ### Tables: Per day across in-flight period
 
-Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary statistics for in-flight sleep, expressed as absolute values.
+Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary statistics for in-flight sleep per day, expressed as absolute values.
 
 **Example interpretation:**
 
@@ -105,11 +103,11 @@ Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary sta
 
 <br />
 
-Table \@ref(tab:tableinflightrelativeteam) below presents team-level summary statistics for in-flight sleep, expressed in values that are relative to each person's habitual sleep characteristics (i.e., relative value = habitual minus in-flight).
+Table \@ref(tab:tableinflightrelativeteam) below presents team-level summary statistics for in-flight sleep per day, expressed in values that are relative to each person's habitual sleep characteristics (i.e., relative value = habitual minus in-flight).
 
 **Example interpretation:**
 
-> Over the course of the international travel days, athletes recorded 39 fewer minutes of sleep per night (SD = 172 min), as compared to their habitual sleep characteristics.
+> Over the course of the international travel days, athletes recorded 39 more minutes of sleep per night (SD = 154 min), as compared to their habitual sleep characteristics.
 
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tableinflightrelativeteam)In-flight sleep summary for the whole team (relative to habitual).</caption>
@@ -148,6 +146,99 @@ Table \@ref(tab:tableinflightrelativeteam) below presents team-level summary sta
    <td style="text-align:right;"> 55 </td>
    <td style="text-align:right;"> 17 </td>
    <td style="text-align:right;"> 1.15 </td>
+  </tr>
+</tbody>
+</table></div>
+
+### Tables: Aggregated across the in-flight period
+
+Table \@ref(tab:tableagginflightabsoluteteam) below presents team-level summary statistics for aggregated in-flight sleep measures, expressed as absolute values.
+
+**Example interpretation:**
+
+> With sleep bouts aggregated across flights, athletes recorded a mean sleep duration of 14.64 h (SD = 3.56 h).
+
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>(\#tab:tableagginflightabsoluteteam)Aggregated in-flight sleep summary for the whole team (absolute values).</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> statistic </th>
+   <th style="text-align:right;"> sleep_duration </th>
+   <th style="text-align:right;"> sleep_duration_h </th>
+   <th style="text-align:right;"> sleep_latency </th>
+   <th style="text-align:right;"> sleep_efficiency </th>
+   <th style="text-align:right;"> wake_duration </th>
+   <th style="text-align:right;"> wake_bouts_num </th>
+   <th style="text-align:right;"> wake_bouts_avg_duration </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mean </td>
+   <td style="text-align:right;"> 878 </td>
+   <td style="text-align:right;"> 14.64 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 86.66 </td>
+   <td style="text-align:right;"> 100 </td>
+   <td style="text-align:right;"> 35 </td>
+   <td style="text-align:right;"> 2.40 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SD </td>
+   <td style="text-align:right;"> 214 </td>
+   <td style="text-align:right;"> 3.56 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6.60 </td>
+   <td style="text-align:right;"> 64 </td>
+   <td style="text-align:right;"> 16 </td>
+   <td style="text-align:right;"> 0.65 </td>
+  </tr>
+</tbody>
+</table></div>
+
+
+Table \@ref(tab:tableagginflightrelativeteam) below presents team-level summary statistics for aggregated in-flight sleep, expressed in values that are relative to each person's habitual sleep characteristics (i.e., relative value = habitual minus aggregated in-flight measures).
+
+**Example interpretations:**
+
+> With sleep bouts aggregated across flights, athletes' in-flight sleep was, on average, 400 minutes longer than their habitual sleep duration (SD = 206 min).
+
+> With sleep bouts aggregated across flights, athletes' in-flight sleep efficiency was, on average, 1.1 percentage points higher than their habitual sleep efficiency (SD = 9.61 percentage points).
+
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>(\#tab:tableagginflightrelativeteam)Aggregated in-flight sleep summary for the whole team (relative to habitual).</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> statistic </th>
+   <th style="text-align:right;"> sleep_duration_diff </th>
+   <th style="text-align:right;"> sleep_duration_h_diff </th>
+   <th style="text-align:right;"> sleep_latency_diff </th>
+   <th style="text-align:right;"> sleep_efficiency_diff </th>
+   <th style="text-align:right;"> wake_duration_diff </th>
+   <th style="text-align:right;"> wake_bouts_num_diff </th>
+   <th style="text-align:right;"> wake_bouts_avg_duration_diff </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mean </td>
+   <td style="text-align:right;"> -400 </td>
+   <td style="text-align:right;"> -6.66 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> -1.10 </td>
+   <td style="text-align:right;"> -40 </td>
+   <td style="text-align:right;"> -7 </td>
+   <td style="text-align:right;"> -0.27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> SD </td>
+   <td style="text-align:right;"> 206 </td>
+   <td style="text-align:right;"> 3.43 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 9.61 </td>
+   <td style="text-align:right;"> 76 </td>
+   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> 0.93 </td>
   </tr>
 </tbody>
 </table></div>
