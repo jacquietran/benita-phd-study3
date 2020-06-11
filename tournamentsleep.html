@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Benita Lalor et al. | Last updated: 2020-06-04" />
+<meta name="author" content="Benita Lalor et al. | Last updated: 2020-06-11" />
 
 
 
@@ -161,9 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="tournamentsleep.html"><a href="tournamentsleep.html"><i class="fa fa-check"></i><b>5</b> Tournament sleep</a><ul>
-<li class="chapter" data-level="5.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#per-player-2"><i class="fa fa-check"></i><b>5.1</b> Per player</a><ul>
-<li class="chapter" data-level="5.1.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#plots-per-day-1"><i class="fa fa-check"></i><b>5.1.1</b> Plots: Per day</a></li>
-</ul></li>
+<li class="chapter" data-level="5.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#per-player-2"><i class="fa fa-check"></i><b>5.1</b> Per player</a></li>
 <li class="chapter" data-level="5.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#team-summary-2"><i class="fa fa-check"></i><b>5.2</b> Team summary</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#plots-daily-sleep-1"><i class="fa fa-check"></i><b>5.2.1</b> Plots: Daily sleep</a></li>
 <li class="chapter" data-level="5.2.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#tables-per-day-across-tournament-period"><i class="fa fa-check"></i><b>5.2.2</b> Tables: Per day across tournament period</a></li>
@@ -278,22 +276,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 5</span> Tournament sleep</h1>
 <div id="per-player-2" class="section level2">
 <h2><span class="header-section-number">5.1</span> Per player</h2>
-<div id="plots-per-day-1" class="section level3">
-<h3><span class="header-section-number">5.1.1</span> Plots: Per day</h3>
-<p>From the plots below, an example interpretation is:</p>
+<p>Example interpretations from the plots below:</p>
 <blockquote>
 <p>When examining sleep obtained during the tournament, athlete 02 recorded the highest sleep duration per night (mean = 9.06 h), while athlete 10 recorded the lowest sleep duration per night (mean = 7.29 h).</p>
 </blockquote>
+<blockquote>
+<p>During the tournament, athlete 12 typically had the earliest bed time (mean = 8:35 PM) while athlete 06 typically had the latest bed time (mean = 11:56 PM).</p>
+</blockquote>
 <p><img src="04-tournament_sleep_files/figure-html/patch_plots_indiv_summary-1.png" width="1152" /></p>
-</div>
 </div>
 <div id="team-summary-2" class="section level2">
 <h2><span class="header-section-number">5.2</span> Team summary</h2>
 <div id="plots-daily-sleep-1" class="section level3">
 <h3><span class="header-section-number">5.2.1</span> Plots: Daily sleep</h3>
-<p>From the plots below, an example interpretation is:</p>
+<p>Example interpretations of the plots below:</p>
 <blockquote>
 <p>On average, nightly sleep duration during the tournament period was greater than habitual sleep duration (habitual mean = 7.98 h), except for on March 18 (mean = 7.21 h) and March 21 (mean = 6.62 h).</p>
+</blockquote>
+<blockquote>
+<p>On average, nightly bed time during the tournament period was earlier than the team’s habitual bed time (habitual mean = 11:12 PM), except for on March 19 (mean = 11:16 PM), 21 (mean = 11:25 PM), and 22 (mean = 1:10 AM).</p>
 </blockquote>
 <p><img src="04-tournament_sleep_files/figure-html/patch_plots_sleep_daily-1.png" width="1152" /></p>
 </div>
@@ -313,6 +314,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <tr>
 <th style="text-align:left;">
 statistic
+</th>
+<th style="text-align:left;">
+bed_time_HHMM
+</th>
+<th style="text-align:left;">
+wake_up_time_HHMM
 </th>
 <th style="text-align:right;">
 sleep_duration
@@ -342,6 +349,12 @@ wake_bouts_avg_duration
 <td style="text-align:left;">
 Mean
 </td>
+<td style="text-align:left;">
+22:19
+</td>
+<td style="text-align:left;">
+06:49
+</td>
 <td style="text-align:right;">
 496
 </td>
@@ -367,6 +380,12 @@ Mean
 <tr>
 <td style="text-align:left;">
 SD
+</td>
+<td style="text-align:left;">
+01:52
+</td>
+<td style="text-align:left;">
+01:37
 </td>
 <td style="text-align:right;">
 84
@@ -395,9 +414,12 @@ SD
 </div>
 <p><br /></p>
 <p>Table <a href="tournamentsleep.html#tab:tabletournamentrelativeteam">5.2</a> below presents team-level summary statistics for tournament sleep, expressed in values that are relative to each person’s habitual sleep characteristics (i.e., relative value = habitual minus tournament).</p>
-<p><strong>Example interpretation:</strong></p>
+<p><strong>Example interpretations:</strong></p>
 <blockquote>
 <p>Over the course of the tournament period, athletes obtained 21 more minutes of sleep (SD = 106 min), as compared to their habitual sleep characteristics.</p>
+</blockquote>
+<blockquote>
+<p>Typical bed time during the tournament period was 53 minutes earlier than habitual (SD = 41 min) and typical wake-up time during the tournament period was 46 minutes earlier than habitual (SD = 44 min).</p>
 </blockquote>
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; ">
 <table class="table" style="margin-left: auto; margin-right: auto;">
@@ -408,6 +430,12 @@ SD
 <tr>
 <th style="text-align:left;">
 statistic
+</th>
+<th style="text-align:right;">
+bed_time_min_diff
+</th>
+<th style="text-align:right;">
+wake_up_time_min_diff
 </th>
 <th style="text-align:right;">
 sleep_duration_diff
@@ -438,6 +466,12 @@ wake_bouts_avg_duration_diff
 Mean
 </td>
 <td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
 16
 </td>
 <td style="text-align:right;">
@@ -462,6 +496,12 @@ Mean
 <tr>
 <td style="text-align:left;">
 SD
+</td>
+<td style="text-align:right;">
+-41
+</td>
+<td style="text-align:right;">
+44
 </td>
 <td style="text-align:right;">
 101

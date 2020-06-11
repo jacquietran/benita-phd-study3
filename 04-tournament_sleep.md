@@ -10,11 +10,11 @@
 
 ## Per player
 
-### Plots: Per day
-
-From the plots below, an example interpretation is:
+Example interpretations from the plots below:
 
 > When examining sleep obtained during the tournament, athlete 02 recorded the highest sleep duration per night (mean = 9.06 h), while athlete 10 recorded the lowest sleep duration per night (mean = 7.29 h).
+
+> During the tournament, athlete 12 typically had the earliest bed time (mean = 8:35 PM) while athlete 06 typically had the latest bed time (mean = 11:56 PM).
 
 
 
@@ -24,9 +24,11 @@ From the plots below, an example interpretation is:
 
 ### Plots: Daily sleep
 
-From the plots below, an example interpretation is:
+Example interpretations of the plots below:
 
 > On average, nightly sleep duration during the tournament period was greater than habitual sleep duration (habitual mean = 7.98 h), except for on March 18 (mean = 7.21 h) and March 21 (mean = 6.62 h).
+
+> On average, nightly bed time during the tournament period was earlier than the team's habitual bed time (habitual mean = 11:12 PM), except for on March 19 (mean = 11:16 PM), 21 (mean = 11:25 PM), and 22 (mean = 1:10 AM).
 
 
 
@@ -42,11 +44,16 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
 
 > Over the course of the tournament period, athletes recorded a mean sleep duration of 8.33 h of per night (SD = 1.54 h).
 
+
+
+
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tabletournamentabsoluteteam)Tournament sleep summary for the whole team (absolute values).</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> statistic </th>
+   <th style="text-align:left;"> bed_time_HHMM </th>
+   <th style="text-align:left;"> wake_up_time_HHMM </th>
    <th style="text-align:right;"> sleep_duration </th>
    <th style="text-align:right;"> sleep_duration_h </th>
    <th style="text-align:right;"> sleep_latency </th>
@@ -59,6 +66,8 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
 <tbody>
   <tr>
    <td style="text-align:left;"> Mean </td>
+   <td style="text-align:left;"> 22:19 </td>
+   <td style="text-align:left;"> 06:49 </td>
    <td style="text-align:right;"> 496 </td>
    <td style="text-align:right;"> 8.26 </td>
    <td style="text-align:right;"> 5 </td>
@@ -69,6 +78,8 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
+   <td style="text-align:left;"> 01:52 </td>
+   <td style="text-align:left;"> 01:37 </td>
    <td style="text-align:right;"> 84 </td>
    <td style="text-align:right;"> 1.40 </td>
    <td style="text-align:right;"> 8 </td>
@@ -84,15 +95,21 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
 
 Table \@ref(tab:tabletournamentrelativeteam) below presents team-level summary statistics for tournament sleep, expressed in values that are relative to each person's habitual sleep characteristics (i.e., relative value = habitual minus tournament).
 
-**Example interpretation:**
+**Example interpretations:**
 
 > Over the course of the tournament period, athletes obtained 21 more minutes of sleep (SD = 106 min), as compared to their habitual sleep characteristics.
+
+> Typical bed time during the tournament period was 53 minutes earlier than habitual (SD = 41 min) and typical wake-up time during the tournament period was 46 minutes earlier than habitual (SD = 44 min).
+
+
 
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tabletournamentrelativeteam)Tournament sleep summary for the whole team (relative to habitual).</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> statistic </th>
+   <th style="text-align:right;"> bed_time_min_diff </th>
+   <th style="text-align:right;"> wake_up_time_min_diff </th>
    <th style="text-align:right;"> sleep_duration_diff </th>
    <th style="text-align:right;"> sleep_duration_h_diff </th>
    <th style="text-align:right;"> sleep_latency_diff </th>
@@ -105,6 +122,8 @@ Table \@ref(tab:tabletournamentrelativeteam) below presents team-level summary s
 <tbody>
   <tr>
    <td style="text-align:left;"> Mean </td>
+   <td style="text-align:right;"> 53 </td>
+   <td style="text-align:right;"> 46 </td>
    <td style="text-align:right;"> 16 </td>
    <td style="text-align:right;"> 0.27 </td>
    <td style="text-align:right;"> -3 </td>
@@ -115,6 +134,8 @@ Table \@ref(tab:tabletournamentrelativeteam) below presents team-level summary s
   </tr>
   <tr>
    <td style="text-align:left;"> SD </td>
+   <td style="text-align:right;"> -41 </td>
+   <td style="text-align:right;"> 44 </td>
    <td style="text-align:right;"> 101 </td>
    <td style="text-align:right;"> 1.68 </td>
    <td style="text-align:right;"> 10 </td>
