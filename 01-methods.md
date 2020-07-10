@@ -708,82 +708,60 @@ $efficiency_{day-level} = \frac {total\ time\ in\ bed_{day}} {sleep\ duration_{d
 
 ## Analysis
 
-The content below has been copied over from [**the GitHub repo for this analysis**](https://github.com/jacquietran/2019_phd_benita_study_3/blob/master/docs/analysis_plan.md).
+Most variables violated parametric assumptions, so non-parametric techniques were used. Statistical significance was set at p < 0.05.
 
-### Research question 1
+To determine the impact of in-flight sleep on tournament measures, a median split was used to create sub-samples based on 1) in-flight sleep quantity (two groups: higher duration vs. lower duration) and 2) in-flight sleep quality (two groups: higher efficiency vs. lower efficiency). Two non-parametric factorial analyses (Noguchi, et al., 2012) were conducted with a two-way design to test for differences between groups and across tournament dates: 1) in-flight duration group x date, and 2) in-flight efficiency group x date. The non-parametric factorial approach is analogous to the parametric ANOVA, and its primary output is the F-type statistic. Where significant main or interaction effects were identified, pairwise comparisons were performed with Dunn-Bonferroni corrections applied to reduce the risk of Type I errors.
 
-_What changes occur in sleep characteristics, perceptions of jetlag, and self-reported well-being over the course of an international T20 tournament and following an international flight?_
+Descriptive statistics were calculated and plotted to show how the team's sleep, perceived jetlag, and self-reported well-being changed day-to-day over the course of the tournament period. Further context was added to the description and visualisation of tournament sleep by incorporating team means for habitual sleep, to illustrate where nightly sleep deviated from habitual values.
 
-#### Analysis methods
+Spearman’s correlation coefficients (rho) were calculated to assess the bivariate associations between i) sleep measures and internal training and / or playing loads incurred on the subsequent day, ii) sleep measures and self-reported well-being recorded on the subsequent day, iii) sleep and perceived ratings of jetlag recorded on the subsequent day.
 
-- Descriptive statistics
-- Plots
+Statistical analyses were conducted using R version 3.6.1 (R Core Team, 2019) and the following packages: here (Müller, 2017), chron, (James & Hornik, 2020), dplyr (Wickham, et al., 2020), tidyr (Wickham & Henry, 2020), stringr (Wickham, 2019), purrr (Henry & Wickham, 2019), purrr (Henry & Wickham, 2019), tibble (Müller & Wickham, 2020), nparLD (Noguchi, et al., 2012), psych (Revelle, 2019), ggplot2 (Wickham, 2016), knitr (Xie, 2015), kableExtra (Zhu, 2019).
 
-#### Notes
+## All R packages
 
-Objective sleep data can be presented as absolute values and relative-to-habitual values.
 
-### Research question 2
+```r
+# R project management ---------------------------------------------------------
 
-_What is the impact of sleep obtained during an international flight on the subsequent sleep, self-reported well-being, and perceptions of jetlag upon arrival at the competition destination?_
+library(here)
 
-#### Analysis methods
+# Data processing --------------------------------------------------------------
 
-- Use the in-flight sleep to group athletes into categories via median split. For example, a low quantity vs. high quantity? Using data only from the n = 8 with habitual + in-flight sleep data, the median is 11.7 h sleep accumulated across the two flights from Melbourne to Chennai. So the 'low' group would have recorded <= 11.7 h in-flight sleep and the 'high' group would have recorded > 11.7 h (in this example).
-- Then we could scale each athlete's on-tour sleep data to their habitual sleep data, to calculate how far each night of sleep 'deviates' from habitual.
-- This would allow us to use each night of post-flight, on-tour sleep as a data point. With n = 8, this is 91 observations in total; 48 in the 'high quantity' group, 43 in the 'low quantity' group.
-- To compare these groups, I would use a simple pairwise statistic such as the independent t test (parametric) or the Mann-Whitney test (non-parametric), coupled with an effect size calculation (e.g., standardised mean difference).
-- The number of observations is different for the other measures (well-being, perceptions of jetlag) but the general analytical process would be the same.
+library(chron)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(purrr)
+library(tibble)
 
-For RQ2: we want to compare two groups (poor in-flight sleep vs. good in-flight sleep), accounting for repeated measures of the dependent variable (i.e., daily measures). The appropriate test is a non-parametric test for factorial longitudinal data, as described here by Noguchi et al., 2012: https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf
+# Statistical analysis ---------------------------------------------------------
 
-**Specifics around data prep and model building:**
+library(nparLD)
+library(psych)
 
-With aggregate in-flight sleep data, apply median split to create groups based on their in-flight sleep quantity ("high" / "low") and their in-flight sleep quality ("high" / "low").
+# Visualisations ---------------------------------------------------------------
 
-Convert tournament period data to long format. At minimum, this data set needs these variables:
-- Response / dependent variable (e.g., sleep duration)
-- Day of the tournament (this is our time variable)
-- In-flight sleep quantity group (this is one of our grouping variables)
-- In-flight sleep quality group (this is one of our grouping variables)
+library(ggplot2)
+library(patchwork)
 
-Using `nparLD` package
+# Publishing tools -------------------------------------------------------------
 
-- Build omnibus model. Inspect plot and model summary.
-- Conduct pairwise comparisons with Bonferroni adjustment of alpha level.
+library(knitr)
+library(kableExtra)
+```
 
-#### Considerations
-
-If we had sufficient sample size, the best approach would be to apply the F2-LD-F1 design as described by [Noguchi, et al., 2012](https://www.jstatsoft.org/index.php/jss/article/view/v050i12/v50i12.pdf). This is analogous to a three-way ANOVA. With such a design, the omnibus model would be specified as:
-
-response_variable ~ day * inflight_sleep_quantity_group * inflight_sleep_quality_group
-
-And the results of the omnibus model would allow us to check for:
-
-- Main effects
-     - Is there a main effect for "day"? That is, are there changes in the response variable over time (over the tournament period)?
-     - Is there a main effect for "in-flight sleep quantity group"? That is, do players differ in the response variable based on whether they are in the "high" vs. "low" group for in-flight sleep quantity?
-     - Is there a main effect for "in-flight sleep quality group"? That is, do players differ in the response variable based on whether they are in the "high" vs. "low" group for in-flight sleep quality?
-- Interaction effects
-     - Is there an interaction between "day" and "in-flight sleep quantity group"? That is, do the time profiles of the response variable differ between the two groups that are based on in-flight sleep quantity?
-     - Is there an interaction between "day" and "in-flight sleep quality group"? That is, do the time profiles of the response variable differ between the two groups that are based on in-flight sleep quality?
-     - Is there an interaction between "in-flight sleep quantity" and "in-flight sleep quality"? Think of a quadrant: 1) high-quantity & high-quality in-flight sleep; 2) high-quantity & low-quality in-flight sleep; 3) low-quantity & high-quality in-flight sleep; and 4) low-quantity & low-quality in-flight sleep.
-     - Is there an interaction betwen "day", "in-flight sleep quantity", and "in-flight sleep quality"? That is, do the time profiles differ of the response variable between groups based on both their in-flight sleep quantity AND quality? The quadrant idea applies here too.
-     
-While this is the ideal approach, our sample size is too small to be "cut" this many ways. We may need to make mention of this when discussing analysis methods / limitations.
-
-### Research question 3
-
-_What are the relationships between training and match day load, perceptions of wellbeing and jetlag, and objective sleep characteristics during an international tournament?_
-
-#### Analysis methods
-
-- For n = 13 athletes who recorded some objective sleep data during the tour:
-     -	Relationship: Internal load on subsequent sleep. Number of paired observations: n(paired obs) = 126
-     -	Relationship: Well-being on subsequent sleep. n(paired obs) = 145
-     -	Relationship: Perceived jetlag on subsequent sleep. n(paired obs) = 85
-- Given these numbers, we can address this research question with bivariate correlations (Pearson’s for parametric data, Spearman’s for non-parametric).
-
-### Notes
-
-For this analysis, are we going to scale to habitual sleep as well? Not sure that we need to here, happy to chat about it though.
+- R Core Team, 2019, *R: A language and environment for statistical computing*. Vienna, Austria: R Foundation for Statistical Computing. URL: https://www.R-project.org/
+- Müller, K., 2017, "here: A simpler way to find your files", R package version 0.1. URL: https://CRAN.R-project.org/package=here
+- James, D. & Hornik, K., 2020, "chron: Chronological objects which can handle dates and times", R package 2.3-55. URL: https://CRAN.R-project.org/package=chron
+- Wickham, H., François, R., Henry, L., & Müller, K., 2020, "dplyr: A grammar of data manipulation", R package version 0.8.5. URL: https://CRAN.R-project.org/package=dplyr
+- Wickham, H. & Henry, L, 2020, "tidyr: Tidy messy data", R package version 1.1.0. URL: https://CRAN.R-project.org/package=tidyr
+- Wickham, H., 2019, "stringr: Simple, consistent wrappers for common string operations", R package version 1.4.0. URL: https://CRAN.R-project.org/package=stringr
+- Henry, L. & Wickham, H., 2019, "purrr: Functional programming tools", R package version 0.3.3. URL: https://CRAN.R-project.org/package=purrr
+- Müller, K. & Wickham, H., 2020, "tibble: Simple data frames", R package version 3.0.1. URL: https://CRAN.R-project.org/package=tibble
+- Noguchi, K., Gel, Y.R., Brunner, E., & Konietschke, F., 2012, "nparLD: An R software package for the nonparametric analysis of longitudinal data in factorial experiments", *Journal of Statistical Software, 50*(12), 1-23. URL: http://www.jstatsoft.org/v50/i12/
+- Revelle, W., 2019, "psych: Procedures for psychological, psychometric, and personality research", R package 1.9.12. URL: https://CRAN.R-project.org/package=psych
+- Wickham, H., 2016, *ggplot2: Elegant Graphics for Data Analysis*, New York, NY: Springer-Verlag. URL: https://ggplot2.tidyverse.org
+- Pedersen, T.L., 2019, "patchwork: The composer of plots", R package version 1.0.0. URL: https://CRAN.R-project.org/package=patchwork
+- Xie, Y., 2015, *Dynamic Documents with R and knitr* (2nd ed.). Boca Raton, FL: Chapman and Hall/CRC. URL: https://bookdown.org/yihui/rmarkdown/
+- Zhu, H., 2019, "kableExtra: Construct complex table with 'kable' and pipe syntax", R package version 1.1.0. URL: https://CRAN.R-project.org/package=kableExtra

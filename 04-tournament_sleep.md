@@ -34,6 +34,71 @@ Example interpretations of the plots below:
 
 
 
+
+```
+## Warning: Use of `tournament_bed_wake_daily_means$bed_time_pseudo24h` is
+## discouraged. Use `bed_time_pseudo24h` instead.
+
+## Warning: Use of `tournament_bed_wake_daily_means$bed_time_pseudo24h` is
+## discouraged. Use `bed_time_pseudo24h` instead.
+```
+
+```
+## Warning: Use of `tournament_bed_wake_daily_means$wake_up_time_pseudo24h` is
+## discouraged. Use `wake_up_time_pseudo24h` instead.
+
+## Warning: Use of `tournament_bed_wake_daily_means$wake_up_time_pseudo24h` is
+## discouraged. Use `wake_up_time_pseudo24h` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_sleep_duration$value` is discouraged.
+## Use `value` instead.
+
+## Warning: Use of `tournament_daily_means_sleep_duration$value` is discouraged.
+## Use `value` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_sleep_latency$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `tournament_daily_means_sleep_latency$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_sleep_efficiency$value` is discouraged.
+## Use `value` instead.
+
+## Warning: Use of `tournament_daily_means_sleep_efficiency$value` is discouraged.
+## Use `value` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_wake_duration$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `tournament_daily_means_wake_duration$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_wake_bouts_num$value` is discouraged.
+## Use `value` instead.
+
+## Warning: Use of `tournament_daily_means_wake_bouts_num$value` is discouraged.
+## Use `value` instead.
+```
+
+```
+## Warning: Use of `tournament_daily_means_wake_bouts_avg_duration$value` is
+## discouraged. Use `value` instead.
+
+## Warning: Use of `tournament_daily_means_wake_bouts_avg_duration$value` is
+## discouraged. Use `value` instead.
+```
+
 <img src="04-tournament_sleep_files/figure-html/patch_plots_sleep_daily-1.png" width="1152" />
 
 ### Tables: Per day across tournament period

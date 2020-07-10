@@ -1,6 +1,6 @@
 # Correlations {#correlations}
 
-**NOTE:** As of 2020-06-11, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
+**NOTE:** As of 2020-07-10, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
 
 
 
@@ -52,6 +52,11 @@ Histogram + density plots for each measure are shown below.
 ```
 
 ### Correlation scatter plots: Internal loads on subsequent sleep
+
+
+```
+## `geom_smooth()` using formula 'y ~ x'
+```
 
 <img src="13-correlations_files/figure-html/loads_to_sleep_scatter-1.png" width="1152" />
 
@@ -155,6 +160,11 @@ Histogram + density plots for each measure are shown below.
 ```
 
 ### Correlation scatter plots: Well-being on subsequent sleep
+
+
+```
+## `geom_smooth()` using formula 'y ~ x'
+```
 
 <img src="13-correlations_files/figure-html/well_to_sleep_scatter-1.png" width="1152" />
 
@@ -390,6 +400,11 @@ Histogram + density plots for each measure are shown below.
 ```
 
 ### Correlation scatter plots: Jetlag on subsequent sleep
+
+
+```
+## `geom_smooth()` using formula 'y ~ x'
+```
 
 <img src="13-correlations_files/figure-html/jetlag_to_sleep_scatter-1.png" width="1152" />
 

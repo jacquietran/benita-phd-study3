@@ -49,6 +49,55 @@ From the plots below, an example interpretation is:
 
 
 
+
+```
+## Warning: Use of `inflight_daily_means_sleep_duration$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `inflight_daily_means_sleep_duration$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `inflight_daily_means_sleep_latency$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `inflight_daily_means_sleep_latency$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `inflight_daily_means_sleep_efficiency$value` is discouraged.
+## Use `value` instead.
+
+## Warning: Use of `inflight_daily_means_sleep_efficiency$value` is discouraged.
+## Use `value` instead.
+```
+
+```
+## Warning: Use of `inflight_daily_means_wake_duration$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `inflight_daily_means_wake_duration$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `inflight_daily_means_wake_bouts_num$value` is discouraged. Use
+## `value` instead.
+
+## Warning: Use of `inflight_daily_means_wake_bouts_num$value` is discouraged. Use
+## `value` instead.
+```
+
+```
+## Warning: Use of `inflight_daily_means_wake_bouts_avg_duration$value` is
+## discouraged. Use `value` instead.
+
+## Warning: Use of `inflight_daily_means_wake_bouts_avg_duration$value` is
+## discouraged. Use `value` instead.
+```
+
 <img src="03-inflight_sleep_files/figure-html/patch_plots_sleep_daily-1.png" width="1152" />
 
 
