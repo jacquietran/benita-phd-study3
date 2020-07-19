@@ -112,6 +112,12 @@ Table \@ref(tab:tabletournamentabsoluteteam) below presents team-level summary s
 
 
 
+
+```
+## Warning: namespace 'highr' is not available and has been replaced
+## by .GlobalEnv when processing object '<unknown>'
+```
+
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tabletournamentabsoluteteam)Tournament sleep summary for the whole team (absolute values).</caption>
  <thead>

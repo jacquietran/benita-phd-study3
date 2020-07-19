@@ -81,6 +81,11 @@ median_split_groups %>%
   scroll_box(width = "750px", height = "400px")
 ```
 
+```
+## Warning: namespace 'highr' is not available and has been replaced
+## by .GlobalEnv when processing object '<unknown>'
+```
+
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:750px; "><table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>

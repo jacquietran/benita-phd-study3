@@ -140,6 +140,11 @@ back_calc %>%
   scroll_box(width = "800px", height = "550px")
 ```
 
+```
+## Warning: namespace 'highr' is not available and has been replaced
+## by .GlobalEnv when processing object '<unknown>'
+```
+
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:550px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tabletotaltimeinbed)Total time in bed, estimated from habitual sleep variables.</caption>
  <thead>

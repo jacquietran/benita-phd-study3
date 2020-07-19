@@ -1,6 +1,6 @@
 # Correlations {#correlations}
 
-**NOTE:** As of 2020-07-10, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
+**NOTE:** As of 2020-07-19, this page is a duplicate of what is presented in the [results dashboard here](https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html). Treat the results on this page as **provisional** for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.
 
 
 
@@ -74,34 +74,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.04 </td>
-   <td style="text-align:right;"> 0.70 </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.27 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.01 </td>
-   <td style="text-align:right;"> 0.89 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> -0.14 </td>
-   <td style="text-align:right;"> 0.16 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
+   <td style="text-align:left;"> sleep_latency_total </td>
    <td style="text-align:right;"> 0.09 </td>
-   <td style="text-align:right;"> 0.37 </td>
+   <td style="text-align:right;"> 0.43 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
-   <td style="text-align:right;"> 0.13 </td>
-   <td style="text-align:right;"> 0.21 </td>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.07 </td>
+   <td style="text-align:right;"> 0.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.49 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.10 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> -0.01 </td>
-   <td style="text-align:right;"> 0.89 </td>
+   <td style="text-align:right;"> -0.05 </td>
+   <td style="text-align:right;"> 0.62 </td>
   </tr>
 </tbody>
 </table>
@@ -118,34 +118,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.15 </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
+   <td style="text-align:right;"> -0.01 </td>
+   <td style="text-align:right;"> 0.98 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.73 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> 0.15 </td>
    <td style="text-align:right;"> 0.48 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.05 </td>
-   <td style="text-align:right;"> 0.80 </td>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> -0.06 </td>
+   <td style="text-align:right;"> 0.76 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> 0.14 </td>
-   <td style="text-align:right;"> 0.50 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> -0.38 </td>
-   <td style="text-align:right;"> 0.06 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
-   <td style="text-align:right;"> -0.24 </td>
-   <td style="text-align:right;"> 0.25 </td>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.88 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> -0.10 </td>
-   <td style="text-align:right;"> 0.64 </td>
+   <td style="text-align:right;"> -0.18 </td>
+   <td style="text-align:right;"> 0.41 </td>
   </tr>
 </tbody>
 </table>
@@ -182,34 +182,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.03 </td>
-   <td style="text-align:right;"> 0.73 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.14 </td>
-   <td style="text-align:right;"> 0.08 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> 0.07 </td>
-   <td style="text-align:right;"> 0.41 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> -0.11 </td>
-   <td style="text-align:right;"> 0.16 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
    <td style="text-align:right;"> -0.14 </td>
-   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.44 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> 0.69 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> -0.10 </td>
+   <td style="text-align:right;"> 0.27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> -0.17 </td>
+   <td style="text-align:right;"> 0.07 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.00 </td>
-   <td style="text-align:right;"> 0.99 </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.49 </td>
   </tr>
 </tbody>
 </table>
@@ -226,34 +226,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.16 </td>
-   <td style="text-align:right;"> 0.05 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.06 </td>
-   <td style="text-align:right;"> 0.42 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> -0.12 </td>
-   <td style="text-align:right;"> 0.13 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> -0.02 </td>
-   <td style="text-align:right;"> 0.80 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
    <td style="text-align:right;"> -0.07 </td>
-   <td style="text-align:right;"> 0.37 </td>
+   <td style="text-align:right;"> 0.46 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.06 </td>
+   <td style="text-align:right;"> 0.49 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.15 </td>
+   <td style="text-align:right;"> 0.09 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.12 </td>
+   <td style="text-align:right;"> 0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> 0.68 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.11 </td>
-   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.16 </td>
+   <td style="text-align:right;"> 0.07 </td>
   </tr>
 </tbody>
 </table>
@@ -270,34 +270,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.03 </td>
-   <td style="text-align:right;"> 0.72 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.08 </td>
-   <td style="text-align:right;"> 0.32 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
    <td style="text-align:right;"> -0.11 </td>
-   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.23 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> 0.08 </td>
-   <td style="text-align:right;"> 0.31 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
+   <td style="text-align:left;"> sleep_latency_total </td>
    <td style="text-align:right;"> 0.05 </td>
-   <td style="text-align:right;"> 0.55 </td>
+   <td style="text-align:right;"> 0.58 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.20 </td>
+   <td style="text-align:right;"> 0.02 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.35 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.16 </td>
-   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.23 </td>
+   <td style="text-align:right;"> 0.01 </td>
   </tr>
 </tbody>
 </table>
@@ -314,34 +314,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> 0.06 </td>
-   <td style="text-align:right;"> 0.46 </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.29 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> -0.02 </td>
-   <td style="text-align:right;"> 0.80 </td>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.55 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> -0.04 </td>
-   <td style="text-align:right;"> 0.65 </td>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.13 </td>
+   <td style="text-align:right;"> 0.14 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> 0.08 </td>
-   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.21 </td>
+   <td style="text-align:right;"> 0.02 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
-   <td style="text-align:right;"> 0.04 </td>
-   <td style="text-align:right;"> 0.63 </td>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.16 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.21 </td>
-   <td style="text-align:right;"> 0.01 </td>
+   <td style="text-align:right;"> 0.29 </td>
+   <td style="text-align:right;"> 0.00 </td>
   </tr>
 </tbody>
 </table>
@@ -358,34 +358,34 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> 0.01 </td>
-   <td style="text-align:right;"> 0.95 </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
+   <td style="text-align:right;"> 0.07 </td>
+   <td style="text-align:right;"> 0.42 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> 0.03 </td>
-   <td style="text-align:right;"> 0.72 </td>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> 0.67 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> -0.06 </td>
-   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.08 </td>
+   <td style="text-align:right;"> 0.37 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> 0.08 </td>
-   <td style="text-align:right;"> 0.33 </td>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.10 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
-   <td style="text-align:right;"> 0.05 </td>
-   <td style="text-align:right;"> 0.52 </td>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.10 </td>
+   <td style="text-align:right;"> 0.26 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.17 </td>
-   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> 0.18 </td>
+   <td style="text-align:right;"> 0.04 </td>
   </tr>
 </tbody>
 </table>
@@ -422,46 +422,46 @@ Histogram + density plots for each measure are shown below.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> sleep_duration_sum </td>
-   <td style="text-align:right;"> -0.03 </td>
-   <td style="text-align:right;"> 0.81 </td>
+   <td style="text-align:left;"> sleep_duration_h_total </td>
+   <td style="text-align:right;"> -0.15 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> -0.14 </td>
+   <td style="text-align:right;"> 0.27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_latency_total </td>
+   <td style="text-align:right;"> 0.05 </td>
+   <td style="text-align:right;"> 0.72 </td>
+   <td style="text-align:right;"> 0.01 </td>
+   <td style="text-align:right;"> 0.93 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> sleep_efficiency_day </td>
+   <td style="text-align:right;"> -0.26 </td>
+   <td style="text-align:right;"> 0.04 </td>
+   <td style="text-align:right;"> 0.13 </td>
+   <td style="text-align:right;"> 0.31 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_duration_total </td>
+   <td style="text-align:right;"> 0.28 </td>
+   <td style="text-align:right;"> 0.03 </td>
+   <td style="text-align:right;"> -0.11 </td>
+   <td style="text-align:right;"> 0.39 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> wake_bouts_num_total </td>
+   <td style="text-align:right;"> 0.24 </td>
+   <td style="text-align:right;"> 0.06 </td>
    <td style="text-align:right;"> -0.02 </td>
    <td style="text-align:right;"> 0.87 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> sleep_latency_mean </td>
-   <td style="text-align:right;"> -0.03 </td>
-   <td style="text-align:right;"> 0.76 </td>
-   <td style="text-align:right;"> -0.01 </td>
-   <td style="text-align:right;"> 0.95 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sleep_efficiency_mean </td>
-   <td style="text-align:right;"> -0.14 </td>
-   <td style="text-align:right;"> 0.21 </td>
-   <td style="text-align:right;"> 0.16 </td>
-   <td style="text-align:right;"> 0.15 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_duration_sum </td>
-   <td style="text-align:right;"> 0.20 </td>
-   <td style="text-align:right;"> 0.08 </td>
-   <td style="text-align:right;"> -0.08 </td>
-   <td style="text-align:right;"> 0.47 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> wake_bouts_num_sum </td>
-   <td style="text-align:right;"> 0.23 </td>
-   <td style="text-align:right;"> 0.04 </td>
-   <td style="text-align:right;"> -0.01 </td>
-   <td style="text-align:right;"> 0.93 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> wake_bouts_avg_duration_mean </td>
-   <td style="text-align:right;"> 0.07 </td>
-   <td style="text-align:right;"> 0.51 </td>
-   <td style="text-align:right;"> -0.11 </td>
-   <td style="text-align:right;"> 0.35 </td>
+   <td style="text-align:right;"> 0.15 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> -0.07 </td>
+   <td style="text-align:right;"> 0.57 </td>
   </tr>
 </tbody>
 </table>

@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Benita Lalor et al. | Last updated: 2020-07-10" />
+<meta name="author" content="Benita Lalor et al. | Last updated: 2020-07-19" />
 
 
 
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="tournamentsleep.html"/>
 <link rel="next" href="indivprofiles.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,31 +49,29 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -83,9 +80,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -131,62 +128,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a>
-<ul>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
 <li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#methods-participants"><i class="fa fa-check"></i><b>2.1</b> Participants</a></li>
 <li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#key-definitions"><i class="fa fa-check"></i><b>2.2</b> Key definitions</a></li>
 <li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#measures-and-variables"><i class="fa fa-check"></i><b>2.3</b> Measures and variables</a></li>
-<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#derived-variables-and-formats"><i class="fa fa-check"></i><b>2.4</b> Derived variables and formats</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#derived-variables-and-formats"><i class="fa fa-check"></i><b>2.4</b> Derived variables and formats</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="methods.html"><a href="methods.html#habitual-sleep"><i class="fa fa-check"></i><b>2.4.1</b> Habitual sleep</a></li>
 <li class="chapter" data-level="2.4.2" data-path="methods.html"><a href="methods.html#sleep-per-day"><i class="fa fa-check"></i><b>2.4.2</b> Sleep per day</a></li>
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#analysis"><i class="fa fa-check"></i><b>2.5</b> Analysis</a></li>
 <li class="chapter" data-level="2.6" data-path="methods.html"><a href="methods.html#all-r-packages"><i class="fa fa-check"></i><b>2.6</b> All R packages</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="habitualsleep.html"><a href="habitualsleep.html"><i class="fa fa-check"></i><b>3</b> Habitual sleep</a>
-<ul>
+<li class="chapter" data-level="3" data-path="habitualsleep.html"><a href="habitualsleep.html"><i class="fa fa-check"></i><b>3</b> Habitual sleep</a><ul>
 <li class="chapter" data-level="3.1" data-path="habitualsleep.html"><a href="habitualsleep.html#per-player"><i class="fa fa-check"></i><b>3.1</b> Per player</a></li>
 <li class="chapter" data-level="3.2" data-path="habitualsleep.html"><a href="habitualsleep.html#team-summary"><i class="fa fa-check"></i><b>3.2</b> Team summary</a></li>
 <li class="chapter" data-level="3.3" data-path="habitualsleep.html"><a href="habitualsleep.html#plots"><i class="fa fa-check"></i><b>3.3</b> Plots</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="inflightsleep.html"><a href="inflightsleep.html"><i class="fa fa-check"></i><b>4</b> In-flight sleep</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="inflightsleep.html"><a href="inflightsleep.html#per-player-1"><i class="fa fa-check"></i><b>4.1</b> Per player</a>
-<ul>
+<li class="chapter" data-level="4" data-path="inflightsleep.html"><a href="inflightsleep.html"><i class="fa fa-check"></i><b>4</b> In-flight sleep</a><ul>
+<li class="chapter" data-level="4.1" data-path="inflightsleep.html"><a href="inflightsleep.html#per-player-1"><i class="fa fa-check"></i><b>4.1</b> Per player</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="inflightsleep.html"><a href="inflightsleep.html#table-per-sleep-bout"><i class="fa fa-check"></i><b>4.1.1</b> Table: Per sleep bout</a></li>
 <li class="chapter" data-level="4.1.2" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-per-day"><i class="fa fa-check"></i><b>4.1.2</b> Plots: Per day</a></li>
 <li class="chapter" data-level="4.1.3" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-aggregated-over-flights"><i class="fa fa-check"></i><b>4.1.3</b> Plots: Aggregated over flights</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="inflightsleep.html"><a href="inflightsleep.html#team-summary-1"><i class="fa fa-check"></i><b>4.2</b> Team summary</a>
-<ul>
+<li class="chapter" data-level="4.2" data-path="inflightsleep.html"><a href="inflightsleep.html#team-summary-1"><i class="fa fa-check"></i><b>4.2</b> Team summary</a><ul>
 <li class="chapter" data-level="4.2.1" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-daily-sleep"><i class="fa fa-check"></i><b>4.2.1</b> Plots: Daily sleep</a></li>
 <li class="chapter" data-level="4.2.2" data-path="inflightsleep.html"><a href="inflightsleep.html#tables-per-day-across-in-flight-period"><i class="fa fa-check"></i><b>4.2.2</b> Tables: Per day across in-flight period</a></li>
 <li class="chapter" data-level="4.2.3" data-path="inflightsleep.html"><a href="inflightsleep.html#tables-aggregated-across-the-in-flight-period"><i class="fa fa-check"></i><b>4.2.3</b> Tables: Aggregated across the in-flight period</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="tournamentsleep.html"><a href="tournamentsleep.html"><i class="fa fa-check"></i><b>5</b> Tournament sleep</a>
-<ul>
+<li class="chapter" data-level="5" data-path="tournamentsleep.html"><a href="tournamentsleep.html"><i class="fa fa-check"></i><b>5</b> Tournament sleep</a><ul>
 <li class="chapter" data-level="5.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#per-player-2"><i class="fa fa-check"></i><b>5.1</b> Per player</a></li>
-<li class="chapter" data-level="5.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#team-summary-2"><i class="fa fa-check"></i><b>5.2</b> Team summary</a>
-<ul>
+<li class="chapter" data-level="5.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#team-summary-2"><i class="fa fa-check"></i><b>5.2</b> Team summary</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#plots-daily-sleep-1"><i class="fa fa-check"></i><b>5.2.1</b> Plots: Daily sleep</a></li>
 <li class="chapter" data-level="5.2.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#tables-per-day-across-tournament-period"><i class="fa fa-check"></i><b>5.2.2</b> Tables: Per day across tournament period</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="toursleep.html"><a href="toursleep.html"><i class="fa fa-check"></i><b>6</b> Whole-tour sleep</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="toursleep.html"><a href="toursleep.html#bout-level-data"><i class="fa fa-check"></i><b>6.1</b> Bout-level data</a>
-<ul>
+<li class="chapter" data-level="6" data-path="toursleep.html"><a href="toursleep.html"><i class="fa fa-check"></i><b>6</b> Whole-tour sleep</a><ul>
+<li class="chapter" data-level="6.1" data-path="toursleep.html"><a href="toursleep.html#bout-level-data"><i class="fa fa-check"></i><b>6.1</b> Bout-level data</a><ul>
 <li class="chapter" data-level="6.1.1" data-path="toursleep.html"><a href="toursleep.html#plot-bed-and-wake-times-of-each-sleep-bout"><i class="fa fa-check"></i><b>6.1.1</b> Plot: Bed and wake times of each sleep bout</a></li>
 <li class="chapter" data-level="6.1.2" data-path="toursleep.html"><a href="toursleep.html#plots-sleep-characteristics-per-bout"><i class="fa fa-check"></i><b>6.1.2</b> Plots: Sleep characteristics per bout</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="toursleep.html"><a href="toursleep.html#day-level-data"><i class="fa fa-check"></i><b>6.2</b> Day-level data</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="indivprofiles.html"><a href="indivprofiles.html"><i class="fa fa-check"></i><b>7</b> Individual profiles</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="indivprofiles.html"><a href="indivprofiles.html#per-sleep-bout"><i class="fa fa-check"></i><b>7.1</b> Per sleep bout</a>
-<ul>
+<li class="chapter" data-level="7" data-path="indivprofiles.html"><a href="indivprofiles.html"><i class="fa fa-check"></i><b>7</b> Individual profiles</a><ul>
+<li class="chapter" data-level="7.1" data-path="indivprofiles.html"><a href="indivprofiles.html#per-sleep-bout"><i class="fa fa-check"></i><b>7.1</b> Per sleep bout</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-duration"><i class="fa fa-check"></i><b>7.1.1</b> Sleep duration</a></li>
 <li class="chapter" data-level="7.1.2" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-latency"><i class="fa fa-check"></i><b>7.1.2</b> Sleep latency</a></li>
 <li class="chapter" data-level="7.1.3" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-efficiency"><i class="fa fa-check"></i><b>7.1.3</b> Sleep efficiency</a></li>
@@ -196,71 +181,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="indivprofiles.html"><a href="indivprofiles.html#per-day"><i class="fa fa-check"></i><b>7.2</b> Per day</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="jetlag.html"><a href="jetlag.html"><i class="fa fa-check"></i><b>8</b> Jetlag</a>
-<ul>
+<li class="chapter" data-level="8" data-path="jetlag.html"><a href="jetlag.html"><i class="fa fa-check"></i><b>8</b> Jetlag</a><ul>
 <li class="chapter" data-level="8.1" data-path="jetlag.html"><a href="jetlag.html#am-rating"><i class="fa fa-check"></i><b>8.1</b> AM rating</a></li>
 <li class="chapter" data-level="8.2" data-path="jetlag.html"><a href="jetlag.html#pm-rating"><i class="fa fa-check"></i><b>8.2</b> PM rating</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="wellbeing.html"><a href="wellbeing.html"><i class="fa fa-check"></i><b>9</b> Well-being</a>
-<ul>
+<li class="chapter" data-level="9" data-path="wellbeing.html"><a href="wellbeing.html"><i class="fa fa-check"></i><b>9</b> Well-being</a><ul>
 <li class="chapter" data-level="9.1" data-path="wellbeing.html"><a href="wellbeing.html#fatigue"><i class="fa fa-check"></i><b>9.1</b> Fatigue</a></li>
 <li class="chapter" data-level="9.2" data-path="wellbeing.html"><a href="wellbeing.html#sleep-quality"><i class="fa fa-check"></i><b>9.2</b> Sleep quality</a></li>
 <li class="chapter" data-level="9.3" data-path="wellbeing.html"><a href="wellbeing.html#soreness"><i class="fa fa-check"></i><b>9.3</b> Soreness</a></li>
 <li class="chapter" data-level="9.4" data-path="wellbeing.html"><a href="wellbeing.html#stress"><i class="fa fa-check"></i><b>9.4</b> Stress</a></li>
 <li class="chapter" data-level="9.5" data-path="wellbeing.html"><a href="wellbeing.html#overall-score"><i class="fa fa-check"></i><b>9.5</b> Overall score</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="nparLDsleep.html"><a href="nparLDsleep.html"><i class="fa fa-check"></i><b>10</b> nparLD tutorial - Sleep data</a>
-<ul>
+<li class="chapter" data-level="10" data-path="nparLDsleep.html"><a href="nparLDsleep.html"><i class="fa fa-check"></i><b>10</b> nparLD tutorial - Sleep data</a><ul>
 <li class="chapter" data-level="10.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#set-up"><i class="fa fa-check"></i><b>10.1</b> Set up</a></li>
 <li class="chapter" data-level="10.2" data-path="nparLDsleep.html"><a href="nparLDsleep.html#wrangle-the-data"><i class="fa fa-check"></i><b>10.2</b> Wrangle the data</a></li>
-<li class="chapter" data-level="10.3" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-the-omnibus-model"><i class="fa fa-check"></i><b>10.3</b> Run the omnibus model</a>
-<ul>
+<li class="chapter" data-level="10.3" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-the-omnibus-model"><i class="fa fa-check"></i><b>10.3</b> Run the omnibus model</a><ul>
 <li class="chapter" data-level="10.3.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#grouped-on-in-flight-sleep-quantity"><i class="fa fa-check"></i><b>10.3.1</b> 1) Grouped on in-flight sleep quantity</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-multiple-comparison-tests"><i class="fa fa-check"></i><b>10.4</b> Run multiple comparison tests</a>
-<ul>
+<li class="chapter" data-level="10.4" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-multiple-comparison-tests"><i class="fa fa-check"></i><b>10.4</b> Run multiple comparison tests</a><ul>
 <li class="chapter" data-level="10.4.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#main-effect-for-time"><i class="fa fa-check"></i><b>10.4.1</b> Main effect for TIME</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html"><i class="fa fa-check"></i><b>11</b> Impact of flight on tournament sleep</a>
-<ul>
-<li class="chapter" data-level="11.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-duration-group"><i class="fa fa-check"></i><b>11.1</b> Omnibus models: Based on in-flight duration group</a>
-<ul>
+<li class="chapter" data-level="11" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html"><i class="fa fa-check"></i><b>11</b> Impact of flight on tournament sleep</a><ul>
+<li class="chapter" data-level="11.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-duration-group"><i class="fa fa-check"></i><b>11.1</b> Omnibus models: Based on in-flight duration group</a><ul>
 <li class="chapter" data-level="11.1.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration"><i class="fa fa-check"></i><b>11.1.1</b> Pairwise tests for sleep duration</a></li>
 <li class="chapter" data-level="11.1.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts"><i class="fa fa-check"></i><b>11.1.2</b> Pairwise tests for number of wake bouts</a></li>
 <li class="chapter" data-level="11.1.3" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-total-wake-duration"><i class="fa fa-check"></i><b>11.1.3</b> Pairwise tests for total wake duration</a></li>
 </ul></li>
-<li class="chapter" data-level="11.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-efficiency-group"><i class="fa fa-check"></i><b>11.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="11.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-efficiency-group"><i class="fa fa-check"></i><b>11.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="11.2.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration-1"><i class="fa fa-check"></i><b>11.2.1</b> Pairwise tests for sleep duration</a></li>
 <li class="chapter" data-level="11.2.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts-1"><i class="fa fa-check"></i><b>11.2.2</b> Pairwise tests for number of wake bouts</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html"><i class="fa fa-check"></i><b>12</b> Impact of flight on jetlag</a>
-<ul>
-<li class="chapter" data-level="12.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-duration-group-1"><i class="fa fa-check"></i><b>12.1</b> Omnibus models: Based on in-flight duration group</a>
-<ul>
+<li class="chapter" data-level="12" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html"><i class="fa fa-check"></i><b>12</b> Impact of flight on jetlag</a><ul>
+<li class="chapter" data-level="12.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-duration-group-1"><i class="fa fa-check"></i><b>12.1</b> Omnibus models: Based on in-flight duration group</a><ul>
 <li class="chapter" data-level="12.1.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-am-jetlag"><i class="fa fa-check"></i><b>12.1.1</b> Pairwise tests for AM jetlag</a></li>
 <li class="chapter" data-level="12.1.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-pm-jetlag"><i class="fa fa-check"></i><b>12.1.2</b> Pairwise tests for PM jetlag</a></li>
 </ul></li>
-<li class="chapter" data-level="12.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-efficiency-group-1"><i class="fa fa-check"></i><b>12.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="12.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-efficiency-group-1"><i class="fa fa-check"></i><b>12.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-am-jetlag-1"><i class="fa fa-check"></i><b>12.2.1</b> Pairwise tests for AM jetlag</a></li>
 <li class="chapter" data-level="12.2.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-pm-jetlag-1"><i class="fa fa-check"></i><b>12.2.2</b> Pairwise tests for PM jetlag</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html"><i class="fa fa-check"></i><b>13</b> Impact of flight on well-being</a>
-<ul>
+<li class="chapter" data-level="13" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html"><i class="fa fa-check"></i><b>13</b> Impact of flight on well-being</a><ul>
 <li class="chapter" data-level="13.1" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-duration-group-2"><i class="fa fa-check"></i><b>13.1</b> Omnibus models: Based on in-flight duration group</a></li>
-<li class="chapter" data-level="13.2" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-efficiency-group-2"><i class="fa fa-check"></i><b>13.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="13.2" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-efficiency-group-2"><i class="fa fa-check"></i><b>13.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="13.2.1" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#summary-stats-fatigue-by-in-flight-efficiency-group"><i class="fa fa-check"></i><b>13.2.1</b> Summary stats: Fatigue by in-flight efficiency group</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="correlations.html"><a href="correlations.html"><i class="fa fa-check"></i><b>14</b> Correlations</a>
-<ul>
-<li class="chapter" data-level="14.1" data-path="correlations.html"><a href="correlations.html#assumption-tests"><i class="fa fa-check"></i><b>14.1</b> Assumption tests</a>
-<ul>
+<li class="chapter" data-level="14" data-path="correlations.html"><a href="correlations.html"><i class="fa fa-check"></i><b>14</b> Correlations</a><ul>
+<li class="chapter" data-level="14.1" data-path="correlations.html"><a href="correlations.html#assumption-tests"><i class="fa fa-check"></i><b>14.1</b> Assumption tests</a><ul>
 <li class="chapter" data-level="14.1.1" data-path="correlations.html"><a href="correlations.html#interpretation-of-assumption-test-results"><i class="fa fa-check"></i><b>14.1.1</b> Interpretation of assumption test results</a></li>
 <li class="chapter" data-level="14.1.2" data-path="correlations.html"><a href="correlations.html#sleep"><i class="fa fa-check"></i><b>14.1.2</b> Sleep</a></li>
 <li class="chapter" data-level="14.1.3" data-path="correlations.html"><a href="correlations.html#internal-load---all-variables"><i class="fa fa-check"></i><b>14.1.3</b> Internal load - All variables</a></li>
@@ -268,18 +238,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.1.5" data-path="correlations.html"><a href="correlations.html#perceived-jetlag"><i class="fa fa-check"></i><b>14.1.5</b> Perceived jetlag</a></li>
 <li class="chapter" data-level="14.1.6" data-path="correlations.html"><a href="correlations.html#perceived-well-being"><i class="fa fa-check"></i><b>14.1.6</b> Perceived well-being</a></li>
 </ul></li>
-<li class="chapter" data-level="14.2" data-path="correlations.html"><a href="correlations.html#load-on-sleep"><i class="fa fa-check"></i><b>14.2</b> Load on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.2" data-path="correlations.html"><a href="correlations.html#load-on-sleep"><i class="fa fa-check"></i><b>14.2</b> Load on Sleep</a><ul>
 <li class="chapter" data-level="14.2.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-internal-loads-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.2.1</b> Correlation scatter plots: Internal loads on subsequent sleep</a></li>
 <li class="chapter" data-level="14.2.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients-tables"><i class="fa fa-check"></i><b>14.2.2</b> Correlation coefficients tables</a></li>
 </ul></li>
-<li class="chapter" data-level="14.3" data-path="correlations.html"><a href="correlations.html#well-being-on-sleep"><i class="fa fa-check"></i><b>14.3</b> Well-being on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.3" data-path="correlations.html"><a href="correlations.html#well-being-on-sleep"><i class="fa fa-check"></i><b>14.3</b> Well-being on Sleep</a><ul>
 <li class="chapter" data-level="14.3.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-well-being-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.3.1</b> Correlation scatter plots: Well-being on subsequent sleep</a></li>
 <li class="chapter" data-level="14.3.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients-tables-1"><i class="fa fa-check"></i><b>14.3.2</b> Correlation coefficients tables</a></li>
 </ul></li>
-<li class="chapter" data-level="14.4" data-path="correlations.html"><a href="correlations.html#jetlag-on-sleep"><i class="fa fa-check"></i><b>14.4</b> Jetlag on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.4" data-path="correlations.html"><a href="correlations.html#jetlag-on-sleep"><i class="fa fa-check"></i><b>14.4</b> Jetlag on Sleep</a><ul>
 <li class="chapter" data-level="14.4.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-jetlag-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.4.1</b> Correlation scatter plots: Jetlag on subsequent sleep</a></li>
 <li class="chapter" data-level="14.4.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients"><i class="fa fa-check"></i><b>14.4.2</b> Correlation coefficients</a></li>
 </ul></li>
@@ -301,16 +268,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="toursleep" class="section level1" number="6">
+<div id="toursleep" class="section level1">
 <h1><span class="header-section-number">Chapter 6</span> Whole-tour sleep</h1>
-<div id="bout-level-data" class="section level2" number="6.1">
+<div id="bout-level-data" class="section level2">
 <h2><span class="header-section-number">6.1</span> Bout-level data</h2>
 <p>The plots below use data at the level of per player per sleep bout, throughout the whole tour period.</p>
-<div id="plot-bed-and-wake-times-of-each-sleep-bout" class="section level3" number="6.1.1">
+<div id="plot-bed-and-wake-times-of-each-sleep-bout" class="section level3">
 <h3><span class="header-section-number">6.1.1</span> Plot: Bed and wake times of each sleep bout</h3>
 <p><img src="05-tour_sleep_files/figure-html/sleep_bed_wake_up_times-1.png" width="1152" /></p>
 </div>
-<div id="plots-sleep-characteristics-per-bout" class="section level3" number="6.1.2">
+<div id="plots-sleep-characteristics-per-bout" class="section level3">
 <h3><span class="header-section-number">6.1.2</span> Plots: Sleep characteristics per bout</h3>
 <p>From the plots below, an example interpretation is:</p>
 <blockquote>
@@ -319,7 +286,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="05-tour_sleep_files/figure-html/patch_plots_bout_level-1.png" width="1152" /></p>
 </div>
 </div>
-<div id="day-level-data" class="section level2" number="6.2">
+<div id="day-level-data" class="section level2">
 <h2><span class="header-section-number">6.2</span> Day-level data</h2>
 <p>Some more stuff</p>
 

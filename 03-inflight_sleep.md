@@ -109,6 +109,12 @@ Table \@ref(tab:tableinflightabsoluteteam) below presents team-level summary sta
 
 > Over the course of the international travel days, athletes recorded a mean sleep duration of 7.32 h of per night (SD = 2.90 h).
 
+
+```
+## Warning: namespace 'highr' is not available and has been replaced
+## by .GlobalEnv when processing object '<unknown>'
+```
+
 <div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tableinflightabsoluteteam)In-flight sleep summary for the whole team (absolute values).</caption>
  <thead>

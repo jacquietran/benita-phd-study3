@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Benita Lalor et al. | Last updated: 2020-07-10" />
+<meta name="author" content="Benita Lalor et al. | Last updated: 2020-07-19" />
 
 
 
@@ -32,7 +32,6 @@
   
 <link rel="prev" href="inflightsleepandwellbeing.html"/>
 
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,31 +49,29 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -83,9 +80,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -131,62 +128,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a>
-<ul>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
 <li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#methods-participants"><i class="fa fa-check"></i><b>2.1</b> Participants</a></li>
 <li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#key-definitions"><i class="fa fa-check"></i><b>2.2</b> Key definitions</a></li>
 <li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#measures-and-variables"><i class="fa fa-check"></i><b>2.3</b> Measures and variables</a></li>
-<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#derived-variables-and-formats"><i class="fa fa-check"></i><b>2.4</b> Derived variables and formats</a>
-<ul>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#derived-variables-and-formats"><i class="fa fa-check"></i><b>2.4</b> Derived variables and formats</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="methods.html"><a href="methods.html#habitual-sleep"><i class="fa fa-check"></i><b>2.4.1</b> Habitual sleep</a></li>
 <li class="chapter" data-level="2.4.2" data-path="methods.html"><a href="methods.html#sleep-per-day"><i class="fa fa-check"></i><b>2.4.2</b> Sleep per day</a></li>
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="methods.html"><a href="methods.html#analysis"><i class="fa fa-check"></i><b>2.5</b> Analysis</a></li>
 <li class="chapter" data-level="2.6" data-path="methods.html"><a href="methods.html#all-r-packages"><i class="fa fa-check"></i><b>2.6</b> All R packages</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="habitualsleep.html"><a href="habitualsleep.html"><i class="fa fa-check"></i><b>3</b> Habitual sleep</a>
-<ul>
+<li class="chapter" data-level="3" data-path="habitualsleep.html"><a href="habitualsleep.html"><i class="fa fa-check"></i><b>3</b> Habitual sleep</a><ul>
 <li class="chapter" data-level="3.1" data-path="habitualsleep.html"><a href="habitualsleep.html#per-player"><i class="fa fa-check"></i><b>3.1</b> Per player</a></li>
 <li class="chapter" data-level="3.2" data-path="habitualsleep.html"><a href="habitualsleep.html#team-summary"><i class="fa fa-check"></i><b>3.2</b> Team summary</a></li>
 <li class="chapter" data-level="3.3" data-path="habitualsleep.html"><a href="habitualsleep.html#plots"><i class="fa fa-check"></i><b>3.3</b> Plots</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="inflightsleep.html"><a href="inflightsleep.html"><i class="fa fa-check"></i><b>4</b> In-flight sleep</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="inflightsleep.html"><a href="inflightsleep.html#per-player-1"><i class="fa fa-check"></i><b>4.1</b> Per player</a>
-<ul>
+<li class="chapter" data-level="4" data-path="inflightsleep.html"><a href="inflightsleep.html"><i class="fa fa-check"></i><b>4</b> In-flight sleep</a><ul>
+<li class="chapter" data-level="4.1" data-path="inflightsleep.html"><a href="inflightsleep.html#per-player-1"><i class="fa fa-check"></i><b>4.1</b> Per player</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="inflightsleep.html"><a href="inflightsleep.html#table-per-sleep-bout"><i class="fa fa-check"></i><b>4.1.1</b> Table: Per sleep bout</a></li>
 <li class="chapter" data-level="4.1.2" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-per-day"><i class="fa fa-check"></i><b>4.1.2</b> Plots: Per day</a></li>
 <li class="chapter" data-level="4.1.3" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-aggregated-over-flights"><i class="fa fa-check"></i><b>4.1.3</b> Plots: Aggregated over flights</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="inflightsleep.html"><a href="inflightsleep.html#team-summary-1"><i class="fa fa-check"></i><b>4.2</b> Team summary</a>
-<ul>
+<li class="chapter" data-level="4.2" data-path="inflightsleep.html"><a href="inflightsleep.html#team-summary-1"><i class="fa fa-check"></i><b>4.2</b> Team summary</a><ul>
 <li class="chapter" data-level="4.2.1" data-path="inflightsleep.html"><a href="inflightsleep.html#plots-daily-sleep"><i class="fa fa-check"></i><b>4.2.1</b> Plots: Daily sleep</a></li>
 <li class="chapter" data-level="4.2.2" data-path="inflightsleep.html"><a href="inflightsleep.html#tables-per-day-across-in-flight-period"><i class="fa fa-check"></i><b>4.2.2</b> Tables: Per day across in-flight period</a></li>
 <li class="chapter" data-level="4.2.3" data-path="inflightsleep.html"><a href="inflightsleep.html#tables-aggregated-across-the-in-flight-period"><i class="fa fa-check"></i><b>4.2.3</b> Tables: Aggregated across the in-flight period</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="tournamentsleep.html"><a href="tournamentsleep.html"><i class="fa fa-check"></i><b>5</b> Tournament sleep</a>
-<ul>
+<li class="chapter" data-level="5" data-path="tournamentsleep.html"><a href="tournamentsleep.html"><i class="fa fa-check"></i><b>5</b> Tournament sleep</a><ul>
 <li class="chapter" data-level="5.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#per-player-2"><i class="fa fa-check"></i><b>5.1</b> Per player</a></li>
-<li class="chapter" data-level="5.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#team-summary-2"><i class="fa fa-check"></i><b>5.2</b> Team summary</a>
-<ul>
+<li class="chapter" data-level="5.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#team-summary-2"><i class="fa fa-check"></i><b>5.2</b> Team summary</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="tournamentsleep.html"><a href="tournamentsleep.html#plots-daily-sleep-1"><i class="fa fa-check"></i><b>5.2.1</b> Plots: Daily sleep</a></li>
 <li class="chapter" data-level="5.2.2" data-path="tournamentsleep.html"><a href="tournamentsleep.html#tables-per-day-across-tournament-period"><i class="fa fa-check"></i><b>5.2.2</b> Tables: Per day across tournament period</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="toursleep.html"><a href="toursleep.html"><i class="fa fa-check"></i><b>6</b> Whole-tour sleep</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="toursleep.html"><a href="toursleep.html#bout-level-data"><i class="fa fa-check"></i><b>6.1</b> Bout-level data</a>
-<ul>
+<li class="chapter" data-level="6" data-path="toursleep.html"><a href="toursleep.html"><i class="fa fa-check"></i><b>6</b> Whole-tour sleep</a><ul>
+<li class="chapter" data-level="6.1" data-path="toursleep.html"><a href="toursleep.html#bout-level-data"><i class="fa fa-check"></i><b>6.1</b> Bout-level data</a><ul>
 <li class="chapter" data-level="6.1.1" data-path="toursleep.html"><a href="toursleep.html#plot-bed-and-wake-times-of-each-sleep-bout"><i class="fa fa-check"></i><b>6.1.1</b> Plot: Bed and wake times of each sleep bout</a></li>
 <li class="chapter" data-level="6.1.2" data-path="toursleep.html"><a href="toursleep.html#plots-sleep-characteristics-per-bout"><i class="fa fa-check"></i><b>6.1.2</b> Plots: Sleep characteristics per bout</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="toursleep.html"><a href="toursleep.html#day-level-data"><i class="fa fa-check"></i><b>6.2</b> Day-level data</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="indivprofiles.html"><a href="indivprofiles.html"><i class="fa fa-check"></i><b>7</b> Individual profiles</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="indivprofiles.html"><a href="indivprofiles.html#per-sleep-bout"><i class="fa fa-check"></i><b>7.1</b> Per sleep bout</a>
-<ul>
+<li class="chapter" data-level="7" data-path="indivprofiles.html"><a href="indivprofiles.html"><i class="fa fa-check"></i><b>7</b> Individual profiles</a><ul>
+<li class="chapter" data-level="7.1" data-path="indivprofiles.html"><a href="indivprofiles.html#per-sleep-bout"><i class="fa fa-check"></i><b>7.1</b> Per sleep bout</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-duration"><i class="fa fa-check"></i><b>7.1.1</b> Sleep duration</a></li>
 <li class="chapter" data-level="7.1.2" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-latency"><i class="fa fa-check"></i><b>7.1.2</b> Sleep latency</a></li>
 <li class="chapter" data-level="7.1.3" data-path="indivprofiles.html"><a href="indivprofiles.html#sleep-efficiency"><i class="fa fa-check"></i><b>7.1.3</b> Sleep efficiency</a></li>
@@ -196,71 +181,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="indivprofiles.html"><a href="indivprofiles.html#per-day"><i class="fa fa-check"></i><b>7.2</b> Per day</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="jetlag.html"><a href="jetlag.html"><i class="fa fa-check"></i><b>8</b> Jetlag</a>
-<ul>
+<li class="chapter" data-level="8" data-path="jetlag.html"><a href="jetlag.html"><i class="fa fa-check"></i><b>8</b> Jetlag</a><ul>
 <li class="chapter" data-level="8.1" data-path="jetlag.html"><a href="jetlag.html#am-rating"><i class="fa fa-check"></i><b>8.1</b> AM rating</a></li>
 <li class="chapter" data-level="8.2" data-path="jetlag.html"><a href="jetlag.html#pm-rating"><i class="fa fa-check"></i><b>8.2</b> PM rating</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="wellbeing.html"><a href="wellbeing.html"><i class="fa fa-check"></i><b>9</b> Well-being</a>
-<ul>
+<li class="chapter" data-level="9" data-path="wellbeing.html"><a href="wellbeing.html"><i class="fa fa-check"></i><b>9</b> Well-being</a><ul>
 <li class="chapter" data-level="9.1" data-path="wellbeing.html"><a href="wellbeing.html#fatigue"><i class="fa fa-check"></i><b>9.1</b> Fatigue</a></li>
 <li class="chapter" data-level="9.2" data-path="wellbeing.html"><a href="wellbeing.html#sleep-quality"><i class="fa fa-check"></i><b>9.2</b> Sleep quality</a></li>
 <li class="chapter" data-level="9.3" data-path="wellbeing.html"><a href="wellbeing.html#soreness"><i class="fa fa-check"></i><b>9.3</b> Soreness</a></li>
 <li class="chapter" data-level="9.4" data-path="wellbeing.html"><a href="wellbeing.html#stress"><i class="fa fa-check"></i><b>9.4</b> Stress</a></li>
 <li class="chapter" data-level="9.5" data-path="wellbeing.html"><a href="wellbeing.html#overall-score"><i class="fa fa-check"></i><b>9.5</b> Overall score</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="nparLDsleep.html"><a href="nparLDsleep.html"><i class="fa fa-check"></i><b>10</b> nparLD tutorial - Sleep data</a>
-<ul>
+<li class="chapter" data-level="10" data-path="nparLDsleep.html"><a href="nparLDsleep.html"><i class="fa fa-check"></i><b>10</b> nparLD tutorial - Sleep data</a><ul>
 <li class="chapter" data-level="10.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#set-up"><i class="fa fa-check"></i><b>10.1</b> Set up</a></li>
 <li class="chapter" data-level="10.2" data-path="nparLDsleep.html"><a href="nparLDsleep.html#wrangle-the-data"><i class="fa fa-check"></i><b>10.2</b> Wrangle the data</a></li>
-<li class="chapter" data-level="10.3" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-the-omnibus-model"><i class="fa fa-check"></i><b>10.3</b> Run the omnibus model</a>
-<ul>
+<li class="chapter" data-level="10.3" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-the-omnibus-model"><i class="fa fa-check"></i><b>10.3</b> Run the omnibus model</a><ul>
 <li class="chapter" data-level="10.3.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#grouped-on-in-flight-sleep-quantity"><i class="fa fa-check"></i><b>10.3.1</b> 1) Grouped on in-flight sleep quantity</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-multiple-comparison-tests"><i class="fa fa-check"></i><b>10.4</b> Run multiple comparison tests</a>
-<ul>
+<li class="chapter" data-level="10.4" data-path="nparLDsleep.html"><a href="nparLDsleep.html#run-multiple-comparison-tests"><i class="fa fa-check"></i><b>10.4</b> Run multiple comparison tests</a><ul>
 <li class="chapter" data-level="10.4.1" data-path="nparLDsleep.html"><a href="nparLDsleep.html#main-effect-for-time"><i class="fa fa-check"></i><b>10.4.1</b> Main effect for TIME</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html"><i class="fa fa-check"></i><b>11</b> Impact of flight on tournament sleep</a>
-<ul>
-<li class="chapter" data-level="11.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-duration-group"><i class="fa fa-check"></i><b>11.1</b> Omnibus models: Based on in-flight duration group</a>
-<ul>
+<li class="chapter" data-level="11" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html"><i class="fa fa-check"></i><b>11</b> Impact of flight on tournament sleep</a><ul>
+<li class="chapter" data-level="11.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-duration-group"><i class="fa fa-check"></i><b>11.1</b> Omnibus models: Based on in-flight duration group</a><ul>
 <li class="chapter" data-level="11.1.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration"><i class="fa fa-check"></i><b>11.1.1</b> Pairwise tests for sleep duration</a></li>
 <li class="chapter" data-level="11.1.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts"><i class="fa fa-check"></i><b>11.1.2</b> Pairwise tests for number of wake bouts</a></li>
 <li class="chapter" data-level="11.1.3" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-total-wake-duration"><i class="fa fa-check"></i><b>11.1.3</b> Pairwise tests for total wake duration</a></li>
 </ul></li>
-<li class="chapter" data-level="11.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-efficiency-group"><i class="fa fa-check"></i><b>11.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="11.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#omnibus-models-based-on-in-flight-efficiency-group"><i class="fa fa-check"></i><b>11.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="11.2.1" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-sleep-duration-1"><i class="fa fa-check"></i><b>11.2.1</b> Pairwise tests for sleep duration</a></li>
 <li class="chapter" data-level="11.2.2" data-path="inflightsleepandtournamentsleep.html"><a href="inflightsleepandtournamentsleep.html#pairwise-tests-for-number-of-wake-bouts-1"><i class="fa fa-check"></i><b>11.2.2</b> Pairwise tests for number of wake bouts</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html"><i class="fa fa-check"></i><b>12</b> Impact of flight on jetlag</a>
-<ul>
-<li class="chapter" data-level="12.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-duration-group-1"><i class="fa fa-check"></i><b>12.1</b> Omnibus models: Based on in-flight duration group</a>
-<ul>
+<li class="chapter" data-level="12" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html"><i class="fa fa-check"></i><b>12</b> Impact of flight on jetlag</a><ul>
+<li class="chapter" data-level="12.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-duration-group-1"><i class="fa fa-check"></i><b>12.1</b> Omnibus models: Based on in-flight duration group</a><ul>
 <li class="chapter" data-level="12.1.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-am-jetlag"><i class="fa fa-check"></i><b>12.1.1</b> Pairwise tests for AM jetlag</a></li>
 <li class="chapter" data-level="12.1.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-pm-jetlag"><i class="fa fa-check"></i><b>12.1.2</b> Pairwise tests for PM jetlag</a></li>
 </ul></li>
-<li class="chapter" data-level="12.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-efficiency-group-1"><i class="fa fa-check"></i><b>12.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="12.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#omnibus-models-based-on-in-flight-efficiency-group-1"><i class="fa fa-check"></i><b>12.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="12.2.1" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-am-jetlag-1"><i class="fa fa-check"></i><b>12.2.1</b> Pairwise tests for AM jetlag</a></li>
 <li class="chapter" data-level="12.2.2" data-path="inflightsleepandjetlag.html"><a href="inflightsleepandjetlag.html#pairwise-tests-for-pm-jetlag-1"><i class="fa fa-check"></i><b>12.2.2</b> Pairwise tests for PM jetlag</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html"><i class="fa fa-check"></i><b>13</b> Impact of flight on well-being</a>
-<ul>
+<li class="chapter" data-level="13" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html"><i class="fa fa-check"></i><b>13</b> Impact of flight on well-being</a><ul>
 <li class="chapter" data-level="13.1" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-duration-group-2"><i class="fa fa-check"></i><b>13.1</b> Omnibus models: Based on in-flight duration group</a></li>
-<li class="chapter" data-level="13.2" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-efficiency-group-2"><i class="fa fa-check"></i><b>13.2</b> Omnibus models: Based on in-flight efficiency group</a>
-<ul>
+<li class="chapter" data-level="13.2" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#omnibus-models-based-on-in-flight-efficiency-group-2"><i class="fa fa-check"></i><b>13.2</b> Omnibus models: Based on in-flight efficiency group</a><ul>
 <li class="chapter" data-level="13.2.1" data-path="inflightsleepandwellbeing.html"><a href="inflightsleepandwellbeing.html#summary-stats-fatigue-by-in-flight-efficiency-group"><i class="fa fa-check"></i><b>13.2.1</b> Summary stats: Fatigue by in-flight efficiency group</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="correlations.html"><a href="correlations.html"><i class="fa fa-check"></i><b>14</b> Correlations</a>
-<ul>
-<li class="chapter" data-level="14.1" data-path="correlations.html"><a href="correlations.html#assumption-tests"><i class="fa fa-check"></i><b>14.1</b> Assumption tests</a>
-<ul>
+<li class="chapter" data-level="14" data-path="correlations.html"><a href="correlations.html"><i class="fa fa-check"></i><b>14</b> Correlations</a><ul>
+<li class="chapter" data-level="14.1" data-path="correlations.html"><a href="correlations.html#assumption-tests"><i class="fa fa-check"></i><b>14.1</b> Assumption tests</a><ul>
 <li class="chapter" data-level="14.1.1" data-path="correlations.html"><a href="correlations.html#interpretation-of-assumption-test-results"><i class="fa fa-check"></i><b>14.1.1</b> Interpretation of assumption test results</a></li>
 <li class="chapter" data-level="14.1.2" data-path="correlations.html"><a href="correlations.html#sleep"><i class="fa fa-check"></i><b>14.1.2</b> Sleep</a></li>
 <li class="chapter" data-level="14.1.3" data-path="correlations.html"><a href="correlations.html#internal-load---all-variables"><i class="fa fa-check"></i><b>14.1.3</b> Internal load - All variables</a></li>
@@ -268,18 +238,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="14.1.5" data-path="correlations.html"><a href="correlations.html#perceived-jetlag"><i class="fa fa-check"></i><b>14.1.5</b> Perceived jetlag</a></li>
 <li class="chapter" data-level="14.1.6" data-path="correlations.html"><a href="correlations.html#perceived-well-being"><i class="fa fa-check"></i><b>14.1.6</b> Perceived well-being</a></li>
 </ul></li>
-<li class="chapter" data-level="14.2" data-path="correlations.html"><a href="correlations.html#load-on-sleep"><i class="fa fa-check"></i><b>14.2</b> Load on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.2" data-path="correlations.html"><a href="correlations.html#load-on-sleep"><i class="fa fa-check"></i><b>14.2</b> Load on Sleep</a><ul>
 <li class="chapter" data-level="14.2.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-internal-loads-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.2.1</b> Correlation scatter plots: Internal loads on subsequent sleep</a></li>
 <li class="chapter" data-level="14.2.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients-tables"><i class="fa fa-check"></i><b>14.2.2</b> Correlation coefficients tables</a></li>
 </ul></li>
-<li class="chapter" data-level="14.3" data-path="correlations.html"><a href="correlations.html#well-being-on-sleep"><i class="fa fa-check"></i><b>14.3</b> Well-being on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.3" data-path="correlations.html"><a href="correlations.html#well-being-on-sleep"><i class="fa fa-check"></i><b>14.3</b> Well-being on Sleep</a><ul>
 <li class="chapter" data-level="14.3.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-well-being-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.3.1</b> Correlation scatter plots: Well-being on subsequent sleep</a></li>
 <li class="chapter" data-level="14.3.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients-tables-1"><i class="fa fa-check"></i><b>14.3.2</b> Correlation coefficients tables</a></li>
 </ul></li>
-<li class="chapter" data-level="14.4" data-path="correlations.html"><a href="correlations.html#jetlag-on-sleep"><i class="fa fa-check"></i><b>14.4</b> Jetlag on Sleep</a>
-<ul>
+<li class="chapter" data-level="14.4" data-path="correlations.html"><a href="correlations.html#jetlag-on-sleep"><i class="fa fa-check"></i><b>14.4</b> Jetlag on Sleep</a><ul>
 <li class="chapter" data-level="14.4.1" data-path="correlations.html"><a href="correlations.html#correlation-scatter-plots-jetlag-on-subsequent-sleep"><i class="fa fa-check"></i><b>14.4.1</b> Correlation scatter plots: Jetlag on subsequent sleep</a></li>
 <li class="chapter" data-level="14.4.2" data-path="correlations.html"><a href="correlations.html#correlation-coefficients"><i class="fa fa-check"></i><b>14.4.2</b> Correlation coefficients</a></li>
 </ul></li>
@@ -301,48 +268,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="correlations" class="section level1" number="14">
+<div id="correlations" class="section level1">
 <h1><span class="header-section-number">Chapter 14</span> Correlations</h1>
-<p><strong>NOTE:</strong> As of 2020-07-10, this page is a duplicate of what is presented in the <a href="https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html">results dashboard here</a>. Treat the results on this page as <strong>provisional</strong> for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.</p>
-<div id="assumption-tests" class="section level2" number="14.1">
+<p><strong>NOTE:</strong> As of 2020-07-19, this page is a duplicate of what is presented in the <a href="https://jacquietran.neocities.org/benita-phd-study3/dashboard_rq3.html">results dashboard here</a>. Treat the results on this page as <strong>provisional</strong> for now. There is further work to be done to check the underlying data, since some revisions have been made to the data cleaning procedure since these correlations were calculated.</p>
+<div id="assumption-tests" class="section level2">
 <h2><span class="header-section-number">14.1</span> Assumption tests</h2>
-<div id="interpretation-of-assumption-test-results" class="section level3" number="14.1.1">
+<div id="interpretation-of-assumption-test-results" class="section level3">
 <h3><span class="header-section-number">14.1.1</span> Interpretation of assumption test results</h3>
 <p>Proceed with the non-parametric Spearman’s correlation, since many variables across the load, sleep, jetlag, and well-being measures do not approximate normal.</p>
 <p>Histogram + density plots for each measure are shown below.</p>
 </div>
-<div id="sleep" class="section level3" number="14.1.2">
+<div id="sleep" class="section level3">
 <h3><span class="header-section-number">14.1.2</span> Sleep</h3>
 <p><img src="13-correlations_files/figure-html/normality_sleep_plot-1.png" width="1152" /></p>
 </div>
-<div id="internal-load---all-variables" class="section level3" number="14.1.3">
+<div id="internal-load---all-variables" class="section level3">
 <h3><span class="header-section-number">14.1.3</span> Internal load - All variables</h3>
 <p><img src="13-correlations_files/figure-html/normality_loads_all_plot-1.png" width="1152" /></p>
 </div>
-<div id="internal-loads---selected-variables" class="section level3" number="14.1.4">
+<div id="internal-loads---selected-variables" class="section level3">
 <h3><span class="header-section-number">14.1.4</span> Internal loads - Selected variables</h3>
 <p><img src="13-correlations_files/figure-html/normality_loads_selected_plot-1.png" width="1152" /></p>
 </div>
-<div id="perceived-jetlag" class="section level3" number="14.1.5">
+<div id="perceived-jetlag" class="section level3">
 <h3><span class="header-section-number">14.1.5</span> Perceived jetlag</h3>
 <p><img src="13-correlations_files/figure-html/normality_jetlag_plot-1.png" width="1152" /></p>
 </div>
-<div id="perceived-well-being" class="section level3" number="14.1.6">
+<div id="perceived-well-being" class="section level3">
 <h3><span class="header-section-number">14.1.6</span> Perceived well-being</h3>
 <p><img src="13-correlations_files/figure-html/normality_wellbeing_plot-1.png" width="1152" /></p>
 </div>
 </div>
-<div id="load-on-sleep" class="section level2" number="14.2">
+<div id="load-on-sleep" class="section level2">
 <h2><span class="header-section-number">14.2</span> Load on Sleep</h2>
 <pre><code>## Joining, by = &quot;sleep_variable&quot;</code></pre>
-<div id="correlation-scatter-plots-internal-loads-on-subsequent-sleep" class="section level3" number="14.2.1">
+<div id="correlation-scatter-plots-internal-loads-on-subsequent-sleep" class="section level3">
 <h3><span class="header-section-number">14.2.1</span> Correlation scatter plots: Internal loads on subsequent sleep</h3>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="13-correlations_files/figure-html/loads_to_sleep_scatter-1.png" width="1152" /></p>
 </div>
-<div id="correlation-coefficients-tables" class="section level3" number="14.2.2">
+<div id="correlation-coefficients-tables" class="section level3">
 <h3><span class="header-section-number">14.2.2</span> Correlation coefficients tables</h3>
-<div id="internal-training-load-on-subsequent-sleep" class="section level4" number="14.2.2.1">
+<div id="internal-training-load-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.2.2.1</span> Internal training load on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -361,57 +328,57 @@ load_train_total_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
--0.04
+0.12
 </td>
 <td style="text-align:right;">
-0.70
+0.27
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_latency_mean
-</td>
-<td style="text-align:right;">
-0.01
-</td>
-<td style="text-align:right;">
-0.89
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_efficiency_mean
-</td>
-<td style="text-align:right;">
--0.14
-</td>
-<td style="text-align:right;">
-0.16
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_duration_sum
+sleep_latency_total
 </td>
 <td style="text-align:right;">
 0.09
 </td>
 <td style="text-align:right;">
-0.37
+0.43
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_bouts_num_sum
+sleep_efficiency_day
 </td>
 <td style="text-align:right;">
-0.13
+-0.07
 </td>
 <td style="text-align:right;">
-0.21
+0.51
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_duration_total
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.49
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_bouts_num_total
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+0.10
 </td>
 </tr>
 <tr>
@@ -419,16 +386,16 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
--0.01
+-0.05
 </td>
 <td style="text-align:right;">
-0.89
+0.62
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="internal-playing-load-on-subsequent-sleep" class="section level4" number="14.2.2.2">
+<div id="internal-playing-load-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.2.2.2</span> Internal playing load on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -447,10 +414,32 @@ load_play_total_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
--0.15
+-0.01
+</td>
+<td style="text-align:right;">
+0.98
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_latency_total
+</td>
+<td style="text-align:right;">
+0.07
+</td>
+<td style="text-align:right;">
+0.73
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_efficiency_day
+</td>
+<td style="text-align:right;">
+0.15
 </td>
 <td style="text-align:right;">
 0.48
@@ -458,46 +447,24 @@ sleep_duration_sum
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_latency_mean
+wake_duration_total
 </td>
 <td style="text-align:right;">
-0.05
+-0.06
 </td>
 <td style="text-align:right;">
-0.80
+0.76
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_efficiency_mean
+wake_bouts_num_total
 </td>
 <td style="text-align:right;">
-0.14
+0.03
 </td>
 <td style="text-align:right;">
-0.50
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_duration_sum
-</td>
-<td style="text-align:right;">
--0.38
-</td>
-<td style="text-align:right;">
-0.06
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_num_sum
-</td>
-<td style="text-align:right;">
--0.24
-</td>
-<td style="text-align:right;">
-0.25
+0.88
 </td>
 </tr>
 <tr>
@@ -505,10 +472,10 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
--0.10
+-0.18
 </td>
 <td style="text-align:right;">
-0.64
+0.41
 </td>
 </tr>
 </tbody>
@@ -516,17 +483,17 @@ wake_bouts_avg_duration_mean
 </div>
 </div>
 </div>
-<div id="well-being-on-sleep" class="section level2" number="14.3">
+<div id="well-being-on-sleep" class="section level2">
 <h2><span class="header-section-number">14.3</span> Well-being on Sleep</h2>
 <pre><code>## Joining, by = &quot;sleep_variable&quot;</code></pre>
-<div id="correlation-scatter-plots-well-being-on-subsequent-sleep" class="section level3" number="14.3.1">
+<div id="correlation-scatter-plots-well-being-on-subsequent-sleep" class="section level3">
 <h3><span class="header-section-number">14.3.1</span> Correlation scatter plots: Well-being on subsequent sleep</h3>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="13-correlations_files/figure-html/well_to_sleep_scatter-1.png" width="1152" /></p>
 </div>
-<div id="correlation-coefficients-tables-1" class="section level3" number="14.3.2">
+<div id="correlation-coefficients-tables-1" class="section level3">
 <h3><span class="header-section-number">14.3.2</span> Correlation coefficients tables</h3>
-<div id="fatigue-on-subsequent-sleep" class="section level4" number="14.3.2.1">
+<div id="fatigue-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.3.2.1</span> Fatigue on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -545,57 +512,57 @@ Fatigue_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
-</td>
-<td style="text-align:right;">
--0.03
-</td>
-<td style="text-align:right;">
-0.73
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_latency_mean
-</td>
-<td style="text-align:right;">
-0.14
-</td>
-<td style="text-align:right;">
-0.08
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_efficiency_mean
-</td>
-<td style="text-align:right;">
-0.07
-</td>
-<td style="text-align:right;">
-0.41
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_duration_sum
-</td>
-<td style="text-align:right;">
--0.11
-</td>
-<td style="text-align:right;">
-0.16
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_num_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
 -0.14
 </td>
 <td style="text-align:right;">
-0.08
+0.13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_latency_total
+</td>
+<td style="text-align:right;">
+0.07
+</td>
+<td style="text-align:right;">
+0.44
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_efficiency_day
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_duration_total
+</td>
+<td style="text-align:right;">
+-0.10
+</td>
+<td style="text-align:right;">
+0.27
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_bouts_num_total
+</td>
+<td style="text-align:right;">
+-0.17
+</td>
+<td style="text-align:right;">
+0.07
 </td>
 </tr>
 <tr>
@@ -603,16 +570,16 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
-0.00
+0.06
 </td>
 <td style="text-align:right;">
-0.99
+0.49
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="sleep-quality-on-subsequent-sleep" class="section level4" number="14.3.2.2">
+<div id="sleep-quality-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.3.2.2</span> Sleep quality on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -631,57 +598,57 @@ Sleep_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
-</td>
-<td style="text-align:right;">
--0.16
-</td>
-<td style="text-align:right;">
-0.05
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_latency_mean
-</td>
-<td style="text-align:right;">
-0.06
-</td>
-<td style="text-align:right;">
-0.42
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_efficiency_mean
-</td>
-<td style="text-align:right;">
--0.12
-</td>
-<td style="text-align:right;">
-0.13
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_duration_sum
-</td>
-<td style="text-align:right;">
--0.02
-</td>
-<td style="text-align:right;">
-0.80
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_num_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
 -0.07
 </td>
 <td style="text-align:right;">
-0.37
+0.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_latency_total
+</td>
+<td style="text-align:right;">
+0.06
+</td>
+<td style="text-align:right;">
+0.49
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_efficiency_day
+</td>
+<td style="text-align:right;">
+-0.15
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_duration_total
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+0.19
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_bouts_num_total
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.68
 </td>
 </tr>
 <tr>
@@ -689,16 +656,16 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
-0.11
+0.16
 </td>
 <td style="text-align:right;">
-0.15
+0.07
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="soreness-on-subsequent-sleep" class="section level4" number="14.3.2.3">
+<div id="soreness-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.3.2.3</span> Soreness on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -717,57 +684,57 @@ Soreness_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
-</td>
-<td style="text-align:right;">
--0.03
-</td>
-<td style="text-align:right;">
-0.72
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_latency_mean
-</td>
-<td style="text-align:right;">
-0.08
-</td>
-<td style="text-align:right;">
-0.32
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_efficiency_mean
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
 -0.11
 </td>
 <td style="text-align:right;">
-0.15
+0.23
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_duration_sum
-</td>
-<td style="text-align:right;">
-0.08
-</td>
-<td style="text-align:right;">
-0.31
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_num_sum
+sleep_latency_total
 </td>
 <td style="text-align:right;">
 0.05
 </td>
 <td style="text-align:right;">
-0.55
+0.58
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_efficiency_day
+</td>
+<td style="text-align:right;">
+-0.20
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_duration_total
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_bouts_num_total
+</td>
+<td style="text-align:right;">
+0.08
+</td>
+<td style="text-align:right;">
+0.35
 </td>
 </tr>
 <tr>
@@ -775,16 +742,16 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
-0.16
+0.23
 </td>
 <td style="text-align:right;">
-0.05
+0.01
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="stress-on-subsequent-sleep" class="section level4" number="14.3.2.4">
+<div id="stress-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.3.2.4</span> Stress on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -803,57 +770,57 @@ Stress_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
-0.06
+0.10
 </td>
 <td style="text-align:right;">
-0.46
+0.29
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_latency_mean
+sleep_latency_total
 </td>
 <td style="text-align:right;">
--0.02
+0.05
 </td>
 <td style="text-align:right;">
-0.80
+0.55
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_efficiency_mean
+sleep_efficiency_day
 </td>
 <td style="text-align:right;">
--0.04
+-0.13
 </td>
 <td style="text-align:right;">
-0.65
+0.14
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_duration_sum
+wake_duration_total
 </td>
 <td style="text-align:right;">
-0.08
+0.21
 </td>
 <td style="text-align:right;">
-0.33
+0.02
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_bouts_num_sum
+wake_bouts_num_total
 </td>
 <td style="text-align:right;">
-0.04
+0.13
 </td>
 <td style="text-align:right;">
-0.63
+0.16
 </td>
 </tr>
 <tr>
@@ -861,16 +828,16 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
-0.21
+0.29
 </td>
 <td style="text-align:right;">
-0.01
+0.00
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="overall-well-being-on-subsequent-sleep" class="section level4" number="14.3.2.5">
+<div id="overall-well-being-on-subsequent-sleep" class="section level4">
 <h4><span class="header-section-number">14.3.2.5</span> Overall well-being on subsequent sleep</h4>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -889,57 +856,57 @@ overall_wellbeing_score_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
-0.01
+0.07
 </td>
 <td style="text-align:right;">
-0.95
+0.42
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_latency_mean
+sleep_latency_total
 </td>
 <td style="text-align:right;">
-0.03
+0.04
 </td>
 <td style="text-align:right;">
-0.72
+0.67
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_efficiency_mean
+sleep_efficiency_day
 </td>
 <td style="text-align:right;">
--0.06
+-0.08
 </td>
 <td style="text-align:right;">
-0.47
+0.37
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_duration_sum
+wake_duration_total
 </td>
 <td style="text-align:right;">
-0.08
+0.15
 </td>
 <td style="text-align:right;">
-0.33
+0.10
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-wake_bouts_num_sum
+wake_bouts_num_total
 </td>
 <td style="text-align:right;">
-0.05
+0.10
 </td>
 <td style="text-align:right;">
-0.52
+0.26
 </td>
 </tr>
 <tr>
@@ -947,10 +914,10 @@ wake_bouts_num_sum
 wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
-0.17
+0.18
 </td>
 <td style="text-align:right;">
-0.03
+0.04
 </td>
 </tr>
 </tbody>
@@ -958,15 +925,15 @@ wake_bouts_avg_duration_mean
 </div>
 </div>
 </div>
-<div id="jetlag-on-sleep" class="section level2" number="14.4">
+<div id="jetlag-on-sleep" class="section level2">
 <h2><span class="header-section-number">14.4</span> Jetlag on Sleep</h2>
 <pre><code>## Joining, by = &quot;sleep_variable&quot;</code></pre>
-<div id="correlation-scatter-plots-jetlag-on-subsequent-sleep" class="section level3" number="14.4.1">
+<div id="correlation-scatter-plots-jetlag-on-subsequent-sleep" class="section level3">
 <h3><span class="header-section-number">14.4.1</span> Correlation scatter plots: Jetlag on subsequent sleep</h3>
 <pre><code>## `geom_smooth()` using formula &#39;y ~ x&#39;</code></pre>
 <p><img src="13-correlations_files/figure-html/jetlag_to_sleep_scatter-1.png" width="1152" /></p>
 </div>
-<div id="correlation-coefficients" class="section level3" number="14.4.2">
+<div id="correlation-coefficients" class="section level3">
 <h3><span class="header-section-number">14.4.2</span> Correlation coefficients</h3>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -991,13 +958,81 @@ jetlag_pm_p
 <tbody>
 <tr>
 <td style="text-align:left;">
-sleep_duration_sum
+sleep_duration_h_total
 </td>
 <td style="text-align:right;">
--0.03
+-0.15
 </td>
 <td style="text-align:right;">
-0.81
+0.22
+</td>
+<td style="text-align:right;">
+-0.14
+</td>
+<td style="text-align:right;">
+0.27
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_latency_total
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.72
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+0.93
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sleep_efficiency_day
+</td>
+<td style="text-align:right;">
+-0.26
+</td>
+<td style="text-align:right;">
+0.04
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+<td style="text-align:right;">
+0.31
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_duration_total
+</td>
+<td style="text-align:right;">
+0.28
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+-0.11
+</td>
+<td style="text-align:right;">
+0.39
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+wake_bouts_num_total
+</td>
+<td style="text-align:right;">
+0.24
+</td>
+<td style="text-align:right;">
+0.06
 </td>
 <td style="text-align:right;">
 -0.02
@@ -1008,87 +1043,19 @@ sleep_duration_sum
 </tr>
 <tr>
 <td style="text-align:left;">
-sleep_latency_mean
-</td>
-<td style="text-align:right;">
--0.03
-</td>
-<td style="text-align:right;">
-0.76
-</td>
-<td style="text-align:right;">
--0.01
-</td>
-<td style="text-align:right;">
-0.95
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sleep_efficiency_mean
-</td>
-<td style="text-align:right;">
--0.14
-</td>
-<td style="text-align:right;">
-0.21
-</td>
-<td style="text-align:right;">
-0.16
+wake_bouts_avg_duration_mean
 </td>
 <td style="text-align:right;">
 0.15
 </td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_duration_sum
+<td style="text-align:right;">
+0.22
 </td>
 <td style="text-align:right;">
-0.20
+-0.07
 </td>
 <td style="text-align:right;">
-0.08
-</td>
-<td style="text-align:right;">
--0.08
-</td>
-<td style="text-align:right;">
-0.47
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_num_sum
-</td>
-<td style="text-align:right;">
-0.23
-</td>
-<td style="text-align:right;">
-0.04
-</td>
-<td style="text-align:right;">
--0.01
-</td>
-<td style="text-align:right;">
-0.93
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-wake_bouts_avg_duration_mean
-</td>
-<td style="text-align:right;">
-0.07
-</td>
-<td style="text-align:right;">
-0.51
-</td>
-<td style="text-align:right;">
--0.11
-</td>
-<td style="text-align:right;">
-0.35
+0.57
 </td>
 </tr>
 </tbody>

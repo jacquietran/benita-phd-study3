@@ -18,6 +18,12 @@ The data displayed in Table \@ref(tab:tablehabitualsummary) shows habitual sleep
 
 > During the habitual sleep period, the average bed time of athlete 01 was 11:41 PM and their average wake-up time was 7:00 AM.
 
+
+```
+## Warning: namespace 'highr' is not available and has been replaced
+## by .GlobalEnv when processing object '<unknown>'
+```
+
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:550px; overflow-x: scroll; width:800px; "><table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tablehabitualsummary)Habitual sleep characteristics per player.</caption>
  <thead>
